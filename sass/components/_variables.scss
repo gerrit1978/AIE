@@ -1,7 +1,16 @@
 @import "bootstrap/variables";
 
+// Colors
+$yellowLight:        #d5a306;
+$yellowDark:         #d5a306;
 
-$radius: 8px;
+$blueLight:          #0896d6;
+$blueDark:           #070038;
+
+$greyLight:          #f7f3f2;
+$greyDark:           #b4b4b4;
+
+$radius: 16px;
 
 @mixin rounded {
   border-radius: $radius;

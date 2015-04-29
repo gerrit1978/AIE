@@ -13,3 +13,55 @@
 @import "components/desktop";
 @import "components/tablet";
 @import "components/smartphone";
+
+// General
+body{
+  background: white;
+}
+
+
+// Sections & page layout
+section {
+  &.header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  &.menu {
+    background: $greyLight;
+  }
+  &.news-slider {
+    background: $greyLight;
+  }
+  &.upcoming {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background: $yellowDark;
+    color: white;
+  }
+  &.large-blocks {
+    margin-top: 20px;
+  }
+  &.stay-informed {
+    background: $blueLight;
+    color: white;
+    padding-top: .5em;
+    padding-bottom: .5em;
+  }
+  &.footer {
+    background: $blueDark;
+    color: white;
+    // TEMP
+    min-height: 400px;
+    padding-top: 2em;
+  }
+  &.separator {
+    .container {
+      height: 0;
+      border-top: 5px solid $greyDark;
+      border-bottom: 5px solid $greyDark;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      @include rounded;
+    }
+  }
+}

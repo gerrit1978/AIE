@@ -1,7 +1,27 @@
 /* Desktop and tablet */
 @media all and (min-width: 992px) {
+
+  // Main Menu
+  ul.main-menu {
+    margin: 0;
+    padding: 0;
+    li.item {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      list-style: none;
+      height: 40px;
+      line-height: 40px;
+      margin-right: 3em;
+    }
+  }
+
+
 }
 
 /* Desktop only */
 @media all and (min-width: 1023px) {
+  .container {
+    max-width: 1024px;
+  }
 }
