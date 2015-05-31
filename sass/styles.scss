@@ -30,7 +30,6 @@ section {
     background: $greyLight;
   }
   &.news-slider {
-    background: $greyLight;
   }
   &.upcoming {
     padding-top: 2em;
@@ -44,12 +43,12 @@ section {
   &.stay-informed {
     background: $blueLight;
     color: white;
-    padding-top: .5em;
-    padding-bottom: .5em;
+    height: 60px;
+    line-height: 60px;
   }
   &.footer {
-    background: $blueDark;
-    color: white;
+    background: $greyLight;
+    color: $textGreyDark;
     // TEMP
     min-height: 400px;
     padding-top: 2em;
@@ -57,11 +56,27 @@ section {
   &.separator {
     .container {
       height: 0;
-      border-top: 5px solid $greyDark;
-      border-bottom: 5px solid $greyDark;
+      border-top: 3px solid $greyDark;
+      border-bottom: 3px solid $greyDark;
       margin-top: 1em;
       margin-bottom: 1em;
       @include rounded;
+    }
+  }
+}
+
+
+// Menu Section
+section.menu {
+  ul.items {
+    font-size: 1.143em;
+    font-weight: 800;
+    color: $textGreyDark;
+    li.item {
+      a {
+        color: $textGreyDark;
+        text-decoration: none;
+      }
     }
   }
 }

@@ -1,1 +1,17 @@
 /* HTML elements */
+
+a {
+  color: $textGreyDark;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: $textGreyDarkHover;
+    border-bottom: 1px solid $textGreyDarkHover;
+  }
+}
+
+h2 {
+  font-size: 1.429em;
+  font-weight: 800;
+  margin-bottom: 0;
+}
