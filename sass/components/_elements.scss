@@ -15,3 +15,31 @@ h2 {
   font-weight: 800;
   margin-bottom: 0;
 }
+
+/* Form elements */
+.form-item {
+  &.form-item-inline {
+    display: inline-block;
+  }
+  
+  label {
+    font-weight: normal;
+    margin-right: .5em;
+  }
+  
+  input {
+    &.form-text {
+      border: 1px solid $textGreyDark;
+      border-radius: 3px;
+      padding: 2px 6px 3px 6px;
+    }
+  
+    &.form-submit {
+      background: $textGreyDark;
+      border: none;
+      border-radius: 3px;
+      color: white;
+      text-transform: uppercase;
+    }
+  }
+}

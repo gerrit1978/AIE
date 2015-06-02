@@ -2,4 +2,17 @@
 }
 
 @media all and (min-width: 320px) and (max-width: 991px) {
+
+  .resp-true {
+    display: block; 
+  }
+  .resp-false {
+    display: none;
+  }
+
+
+  img {
+    max-width: 100%;  
+  }
+
 }

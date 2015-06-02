@@ -1,6 +1,24 @@
 /* Desktop and tablet */
 @media all and (min-width: 992px) {
 
+  .resp-true {
+    display: none; 
+  }
+  .resp-false {
+    display: block;
+  }
+
+  section.header {
+    form.login {
+      margin-top: 1em;
+      input {
+        &.login {
+          min-width: 16em;
+        }
+      }
+    }
+  }
+
 	section.menu {
     height: 40px;
     line-height: 40px;

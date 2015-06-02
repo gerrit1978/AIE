@@ -14,13 +14,18 @@
   <![endif]-->  
 </head>
 <body>
-<section class="header">
+<section class="header resp-false">
  <div class="container">
   <div class="logo col-md-8">
     <a href="#"><img src="images/logo.png" /></a>
   </div>
   <div class="search col-md-4">
-    Hier login field
+    <form class="login" method="post" action="">
+      <div class="form-item form-item-inline"><input class="form-text login" type="text" name="login" placeholder="Member Login" /></div>
+      <div class="form-item form-item-inline"><input class="form-submit" type="submit" value="Log In" /></div>
+      <div class="form-item"><p class="small"><a href="#">Forgot Password?</a> &bull; <label for="cookie">Keep me logged in </label><input id="cookie" type="checkbox" /></p></div>
+
+    </form>
   </div>
  </div>
 </section> <!-- header -->
@@ -68,12 +73,6 @@
     <div class="block col-md-4">Block 1</div>
     <div class="block col-md-4">Block 2</div>
     <div class="block col-md-4">Block 3</div>        
-  </div>
-</section>
-
-<section class="visual">
-  <div class="container">
-    Hier een fullwidth visual
   </div>
 </section>
 

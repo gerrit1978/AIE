@@ -8587,20 +8587,64 @@ h2 {
   margin-bottom: 0;
 }
 
+/* Form elements */
+/* line 21, ../sass/components/_elements.scss */
+.form-item.form-item-inline {
+  display: inline-block;
+}
+/* line 25, ../sass/components/_elements.scss */
+.form-item label {
+  font-weight: normal;
+  margin-right: .5em;
+}
+/* line 31, ../sass/components/_elements.scss */
+.form-item input.form-text {
+  border: 1px solid #555555;
+  border-radius: 3px;
+  padding: 2px 6px 3px 6px;
+}
+/* line 37, ../sass/components/_elements.scss */
+.form-item input.form-submit {
+  background: #555555;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  text-transform: uppercase;
+}
+
 /* Desktop and tablet */
 @media all and (min-width: 992px) {
   /* line 4, ../sass/components/_desktop.scss */
+  .resp-true {
+    display: none;
+  }
+
+  /* line 7, ../sass/components/_desktop.scss */
+  .resp-false {
+    display: block;
+  }
+
+  /* line 12, ../sass/components/_desktop.scss */
+  section.header form.login {
+    margin-top: 1em;
+  }
+  /* line 15, ../sass/components/_desktop.scss */
+  section.header form.login input.login {
+    min-width: 16em;
+  }
+
+  /* line 22, ../sass/components/_desktop.scss */
   section.menu {
     height: 40px;
     line-height: 40px;
     margin-bottom: 20px;
   }
-  /* line 9, ../sass/components/_desktop.scss */
+  /* line 27, ../sass/components/_desktop.scss */
   section.menu ul.main-menu {
     margin: 0;
     padding: 0;
   }
-  /* line 12, ../sass/components/_desktop.scss */
+  /* line 30, ../sass/components/_desktop.scss */
   section.menu ul.main-menu li.item {
     margin: 0;
     padding: 0;
@@ -8610,47 +8654,47 @@ h2 {
     line-height: 40px;
     margin-right: 3em;
   }
-  /* line 20, ../sass/components/_desktop.scss */
+  /* line 38, ../sass/components/_desktop.scss */
   section.menu ul.main-menu li.item.home {
     background: url(../images/sprite.png) no-repeat left top;
     width: 30px;
     text-indent: -999em;
   }
-  /* line 24, ../sass/components/_desktop.scss */
+  /* line 42, ../sass/components/_desktop.scss */
   section.menu ul.main-menu li.item.home a {
     display: block;
     width: 30px;
     height: 40px;
   }
 
-  /* line 34, ../sass/components/_desktop.scss */
+  /* line 52, ../sass/components/_desktop.scss */
   section.news-slider {
     position: relative;
   }
-  /* line 36, ../sass/components/_desktop.scss */
+  /* line 54, ../sass/components/_desktop.scss */
   section.news-slider ul.slides {
     margin: 0;
     padding: 0;
   }
-  /* line 39, ../sass/components/_desktop.scss */
+  /* line 57, ../sass/components/_desktop.scss */
   section.news-slider ul.slides li.slide {
     background: #d8d4ce;
     margin: 0;
     padding: 0;
   }
-  /* line 43, ../sass/components/_desktop.scss */
+  /* line 61, ../sass/components/_desktop.scss */
   section.news-slider ul.slides li.slide p {
     max-width: 1024px;
     margin: 0 auto;
     text-align: center;
   }
-  /* line 50, ../sass/components/_desktop.scss */
+  /* line 68, ../sass/components/_desktop.scss */
   section.news-slider ol.flex-control-paging {
     display: none !important;
     position: absolute;
     bottom: 10px;
   }
-  /* line 55, ../sass/components/_desktop.scss */
+  /* line 73, ../sass/components/_desktop.scss */
   section.news-slider ul.flex-direction-nav {
     position: absolute;
     display: none !important;
@@ -8659,15 +8703,31 @@ h2 {
 }
 /* Desktop only */
 @media all and (min-width: 1023px) {
-  /* line 66, ../sass/components/_desktop.scss */
+  /* line 84, ../sass/components/_desktop.scss */
   .container {
     max-width: 1024px;
   }
 
-  /* line 70, ../sass/components/_desktop.scss */
+  /* line 88, ../sass/components/_desktop.scss */
   .container-large {
     max-width: 1280px;
     margin: 0 auto;
+  }
+}
+@media all and (min-width: 320px) and (max-width: 991px) {
+  /* line 6, ../sass/components/_smartphone.scss */
+  .resp-true {
+    display: block;
+  }
+
+  /* line 9, ../sass/components/_smartphone.scss */
+  .resp-false {
+    display: none;
+  }
+
+  /* line 14, ../sass/components/_smartphone.scss */
+  img {
+    max-width: 100%;
   }
 }
 /* line 18, ../sass/styles.scss */
@@ -8675,41 +8735,41 @@ body {
   background: white;
 }
 
-/* line 25, ../sass/styles.scss */
+/* line 24, ../sass/styles.scss */
 section.header {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-/* line 29, ../sass/styles.scss */
+/* line 28, ../sass/styles.scss */
 section.menu {
   background: #d8d4ce;
 }
-/* line 34, ../sass/styles.scss */
+/* line 33, ../sass/styles.scss */
 section.upcoming {
   padding-top: 2em;
   padding-bottom: 2em;
   background: #d5a306;
   color: white;
 }
-/* line 40, ../sass/styles.scss */
+/* line 39, ../sass/styles.scss */
 section.large-blocks {
   margin-top: 20px;
 }
-/* line 43, ../sass/styles.scss */
+/* line 42, ../sass/styles.scss */
 section.stay-informed {
   background: #0896d6;
   color: white;
   height: 60px;
   line-height: 60px;
 }
-/* line 49, ../sass/styles.scss */
+/* line 48, ../sass/styles.scss */
 section.footer {
   background: #d8d4ce;
   color: #555555;
   min-height: 400px;
   padding-top: 2em;
 }
-/* line 57, ../sass/styles.scss */
+/* line 56, ../sass/styles.scss */
 section.separator .container {
   height: 0;
   border-top: 3px solid #b4b4b4;
@@ -8722,13 +8782,13 @@ section.separator .container {
   behavior: url(pie/PIE.htc);
 }
 
-/* line 71, ../sass/styles.scss */
+/* line 70, ../sass/styles.scss */
 section.menu ul.items {
   font-size: 1.143em;
   font-weight: 800;
   color: #555555;
 }
-/* line 76, ../sass/styles.scss */
+/* line 75, ../sass/styles.scss */
 section.menu ul.items li.item a {
   color: #555555;
   text-decoration: none;
