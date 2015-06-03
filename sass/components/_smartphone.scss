@@ -40,12 +40,16 @@
         font-size: 1.4em;
         font-weight: 800;
         padding-right: 4em;
-        border-bottom: none;
+        border: none;
       }
     }
+    a {
+      border: none !important;
+    }
     ul.items {
-      position: absolute;
+      position: fixed;
       top: 0;
+/*      left: 100%; */
       right: 0;
       z-index: 1000;
       width: 95%;
@@ -53,30 +57,50 @@
       color: white;
       margin: 0;
       padding: 0 1em;
-      li {
+      padding-top: 15px;
+      li.item {
         list-style: none;
         border-top: 1px solid $greyDark;
-        min-height: 60px;
-        line-height: 60px;
+        min-height: 35px;
+        line-height: 35px;
+        background: url(../images/sprite.png) no-repeat right -200px;
+        &.expanded {
+          background-position: right -233px;
+          a {
+            color: $greyLight;
+          }
+        }
         a {
           color: white;
           font-weight: 300;
+          display: block;
+        }
+        ul.subitems {
+          margin-left: 0;
+          padding-left: 1em;
+          li.subitem {
+            margin: 0;
+            padding: 0;
+            a {
+              color: white;
+            }
+          }
         }
         &.resp-search-menu {
-          min-height: 40px;
+          min-height: 35px;
           border-top: none;
           form {
-            padding-top: 7px;
+            padding-top: 3px;
             height: 25px;
             line-height: 25px;
             .form-text {
-              padding-top: 3px;
-              padding-bottom: 3px;
+              padding: 3px;
               border-radius: 5px;
               border: 1px solid white;
               background: $textGreyDark;
               color: white;
               width: 80%;
+              font-weight: 300;
             }
             .form-submit {
               width: 34px;
@@ -86,6 +110,22 @@
               text-indent: -999em;
               cursor: pointer;
               float: right;
+            }
+          }
+        }
+        &.resp-footer-menu {
+          background: none;
+          padding-top: 15px;
+          line-height: 1.2em !important;
+          img {
+            float: left;
+          }
+          p, h2 {
+            margin-left: 80px;
+          }
+          a {
+            &:hover {
+              border-bottom: 1px solid white;
             }
           }
         }

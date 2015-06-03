@@ -27,6 +27,8 @@
 	  ul.main-menu {
 	    margin: 0;
 	    padding: 0;
+	    font-size: 1.143em;
+	    font-weight: 800;
 	    li.item {
 	      margin: 0;
 	      padding: 0;
@@ -35,6 +37,7 @@
 	      height: 40px;
 	      line-height: 40px;
 	      margin-right: 3em;
+        color: $textGreyDark;
 	      &.home {
 	        background: url(../images/sprite.png) no-repeat left top;
 	        width: 30px;

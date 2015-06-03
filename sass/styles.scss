@@ -68,12 +68,12 @@ section {
 // Menu Section
 section.menu {
   ul.items {
-    font-size: 1.143em;
-    font-weight: 800;
-    color: $textGreyDark;
     li.item {
       a {
         text-decoration: none;
+      }
+      ul {
+        display: none;
       }
     }
   }
