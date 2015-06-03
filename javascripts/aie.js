@@ -1,6 +1,7 @@
 jQuery(document).ready(function($) {
   $('.flexslider').flexslider({
-    slideshowSpeed: 3000
+    slideshowSpeed: 3000,
+    directionNav: false
   });
   
   // subitems on menu

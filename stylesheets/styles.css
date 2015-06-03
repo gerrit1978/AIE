@@ -8664,7 +8664,7 @@ h2 {
     list-style: none;
     height: 40px;
     line-height: 40px;
-    margin-right: 3em;
+    margin-right: 90px;
     color: #555555;
   }
   /* line 41, ../sass/components/_desktop.scss */
@@ -8678,50 +8678,37 @@ h2 {
     display: block;
     width: 30px;
     height: 40px;
+    border: none;
+  }
+  /* line 52, ../sass/components/_desktop.scss */
+  section.menu ul.main-menu li.item.search {
+    background: url(../images/sprite.png) no-repeat right -37px;
+    width: 32px;
+    height: 40px;
+    text-indent: -999em;
+    margin-right: 0;
+  }
+  /* line 58, ../sass/components/_desktop.scss */
+  section.menu ul.main-menu li.item.search a {
+    display: block;
+    width: 32px;
+    height: 40px;
+    border: none;
   }
 
-  /* line 55, ../sass/components/_desktop.scss */
-  section.news-slider {
-    position: relative;
-  }
-  /* line 57, ../sass/components/_desktop.scss */
-  section.news-slider ul.slides {
-    margin: 0;
-    padding: 0;
-  }
-  /* line 60, ../sass/components/_desktop.scss */
-  section.news-slider ul.slides li.slide {
-    background: #d8d4ce;
-    margin: 0;
-    padding: 0;
-  }
-  /* line 64, ../sass/components/_desktop.scss */
-  section.news-slider ul.slides li.slide p {
+  /* line 72, ../sass/components/_desktop.scss */
+  section.news-slider ul.slides li.slide .text {
     max-width: 1024px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  /* line 71, ../sass/components/_desktop.scss */
-  section.news-slider ol.flex-control-paging {
-    display: none !important;
-    position: absolute;
-    bottom: 10px;
-  }
-  /* line 76, ../sass/components/_desktop.scss */
-  section.news-slider ul.flex-direction-nav {
-    position: absolute;
-    display: none !important;
-    right: 0;
   }
 }
 /* Desktop only */
 @media all and (min-width: 1023px) {
-  /* line 87, ../sass/components/_desktop.scss */
+  /* line 88, ../sass/components/_desktop.scss */
   .container {
     max-width: 1024px;
   }
 
-  /* line 91, ../sass/components/_desktop.scss */
+  /* line 92, ../sass/components/_desktop.scss */
   .container-large {
     max-width: 1280px;
     margin: 0 auto;
@@ -8755,6 +8742,7 @@ h2 {
     max-width: 100%;
   }
 
+  /* Menu */
   /* line 30, ../sass/components/_smartphone.scss */
   section.menu {
     border-top: 1px solid #b4b4b4;
@@ -8781,6 +8769,9 @@ h2 {
   }
   /* line 49, ../sass/components/_smartphone.scss */
   section.menu ul.items {
+    /* TEMP */
+    display: none;
+    /* END TEMP */
     position: fixed;
     top: 0;
     /*      left: 100%; */
@@ -8793,7 +8784,7 @@ h2 {
     padding: 0 1em;
     padding-top: 15px;
   }
-  /* line 61, ../sass/components/_smartphone.scss */
+  /* line 65, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item {
     list-style: none;
     border-top: 1px solid #b4b4b4;
@@ -8801,46 +8792,46 @@ h2 {
     line-height: 35px;
     background: url(../images/sprite.png) no-repeat right -200px;
   }
-  /* line 67, ../sass/components/_smartphone.scss */
+  /* line 71, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item.expanded {
     background-position: right -233px;
   }
-  /* line 69, ../sass/components/_smartphone.scss */
+  /* line 73, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item.expanded a {
     color: #d8d4ce;
   }
-  /* line 73, ../sass/components/_smartphone.scss */
+  /* line 77, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item a {
     color: white;
     font-weight: 300;
     display: block;
   }
-  /* line 78, ../sass/components/_smartphone.scss */
+  /* line 82, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item ul.subitems {
     margin-left: 0;
     padding-left: 1em;
   }
-  /* line 81, ../sass/components/_smartphone.scss */
+  /* line 85, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item ul.subitems li.subitem {
     margin: 0;
     padding: 0;
   }
-  /* line 84, ../sass/components/_smartphone.scss */
+  /* line 88, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item ul.subitems li.subitem a {
     color: white;
   }
-  /* line 89, ../sass/components/_smartphone.scss */
+  /* line 93, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item.resp-search-menu {
     min-height: 35px;
     border-top: none;
   }
-  /* line 92, ../sass/components/_smartphone.scss */
+  /* line 96, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item.resp-search-menu form {
     padding-top: 3px;
     height: 25px;
     line-height: 25px;
   }
-  /* line 96, ../sass/components/_smartphone.scss */
+  /* line 100, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item.resp-search-menu form .form-text {
     padding: 3px;
     border-radius: 5px;
@@ -8850,7 +8841,7 @@ h2 {
     width: 80%;
     font-weight: 300;
   }
-  /* line 105, ../sass/components/_smartphone.scss */
+  /* line 109, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item.resp-search-menu form .form-submit {
     width: 34px;
     height: 33px;
@@ -8860,23 +8851,38 @@ h2 {
     cursor: pointer;
     float: right;
   }
-  /* line 116, ../sass/components/_smartphone.scss */
+  /* line 120, ../sass/components/_smartphone.scss */
+  section.menu ul.items li.item.resp-login {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #b4b4b4;
+  }
+  /* line 124, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item.resp-footer-menu {
     background: none;
     padding-top: 15px;
     line-height: 1.2em !important;
   }
-  /* line 120, ../sass/components/_smartphone.scss */
+  /* line 128, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item.resp-footer-menu img {
     float: left;
   }
-  /* line 123, ../sass/components/_smartphone.scss */
+  /* line 131, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item.resp-footer-menu p, section.menu ul.items li.item.resp-footer-menu h2 {
     margin-left: 80px;
   }
-  /* line 127, ../sass/components/_smartphone.scss */
+  /* line 135, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item.resp-footer-menu a:hover {
     border-bottom: 1px solid white;
+  }
+
+  /* News Slider */
+  /* line 145, ../sass/components/_smartphone.scss */
+  section.news-slider {
+    margin-top: 20px;
+  }
+  /* line 149, ../sass/components/_smartphone.scss */
+  section.news-slider ul.slides li.slide .text {
+    padding: 0 20px;
   }
 }
 /* line 18, ../sass/styles.scss */
@@ -8938,4 +8944,67 @@ section.menu ul.items li.item a {
 /* line 75, ../sass/styles.scss */
 section.menu ul.items li.item ul {
   display: none;
+}
+
+/* line 83, ../sass/styles.scss */
+section.news-slider {
+  position: relative;
+  padding-bottom: 40px;
+}
+/* line 86, ../sass/styles.scss */
+section.news-slider ul.slides {
+  margin: 0;
+  padding: 0;
+}
+/* line 89, ../sass/styles.scss */
+section.news-slider ul.slides li.slide {
+  background: #d8d4ce;
+  margin: 0;
+  padding: 0;
+}
+/* line 93, ../sass/styles.scss */
+section.news-slider ul.slides li.slide .text {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 98, ../sass/styles.scss */
+section.news-slider ul.slides li.slide .text a.more {
+  background: white;
+  border: 1px solid #555555;
+  border-radius: 5px;
+  padding: 5px 20px;
+}
+/* line 107, ../sass/styles.scss */
+section.news-slider ol.flex-control-paging {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+/* line 115, ../sass/styles.scss */
+section.news-slider ol.flex-control-paging li {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+/* line 122, ../sass/styles.scss */
+section.news-slider ol.flex-control-paging li a {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: url(../images/sprite.png) no-repeat left -124px;
+  text-indent: -999em;
+  cursor: pointer;
+}
+/* line 129, ../sass/styles.scss */
+section.news-slider ol.flex-control-paging li a.flex-active {
+  background-position: -10px -124px;
 }

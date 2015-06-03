@@ -36,7 +36,7 @@
 	      list-style: none;
 	      height: 40px;
 	      line-height: 40px;
-	      margin-right: 3em;
+	      margin-right: 90px;
         color: $textGreyDark;
 	      &.home {
 	        background: url(../images/sprite.png) no-repeat left top;
@@ -46,41 +46,42 @@
 	          display: block;
 	          width: 30px;
 	          height: 40px;
+	          border: none;
 	        }
+	      }
+	      &.search {
+          background: url(../images/sprite.png) no-repeat right -37px;
+          width: 32px;
+          height: 40px;
+          text-indent: -999em;
+          margin-right: 0;
+          a {
+            display: block;
+            width: 32px;
+            height: 40px;
+            border: none;
+          }
 	      }
 	    }
 	  }
 	}
 	
 	section.news-slider {
-	  position: relative;
 	  ul.slides {
-	    margin: 0;
-	    padding: 0;
 	    li.slide {
-	      background: $greyLight;
-	      margin: 0;
-	      padding: 0;
-	      p {
-	        max-width: 1024px;
-	        margin: 0 auto;
-	        text-align: center;
+	      .text {
+	        max-width: 1024px;	      
 	      }
 	    }
 	  }
 	  ol.flex-control-paging {
-	    display: none !important;
-	    position: absolute;
-	    bottom: 10px;
 	  }
 	  ul.flex-direction-nav {
-      position: absolute;
-      display: none !important;
-      right: 0;
 	  }
 	}
 
 }
+
 
 /* Desktop only */
 @media all and (min-width: 1023px) {
