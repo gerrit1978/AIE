@@ -20,6 +20,10 @@
     margin: 0;
     padding: 0;
   }
+  .col-md-4 {
+    margin: 0;
+    padding: 0;
+  }
 
 
   img {
@@ -156,6 +160,16 @@
 	  ul.flex-direction-nav {
 	  }
 	}
-  
+ 
+  /* Facts */
+  section.facts {
+    .fact {
+      margin: 0 10px;
+      margin-bottom: 10px;
+      p {
+        margin-left: 145px !important;
+      }
+    }
+  } 
 
 }

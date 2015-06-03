@@ -14,12 +14,7 @@
 @import "components/tablet";
 @import "components/smartphone";
 
-// General
-body{
-  background: white;
-}
-
-// Sections & page layout
+/* General Sections & Page Layout */
 section {
   &.header {
     margin-top: 20px;
@@ -65,7 +60,7 @@ section {
 }
 
 
-// Menu Section
+/* Menu Section */
 section.menu {
   ul.items {
     li.item {
@@ -79,7 +74,7 @@ section.menu {
   }
 }
 
-// News slider Section
+/* News slider Section */
 section.news-slider {
   position: relative;
   padding-bottom: 40px;
@@ -129,6 +124,129 @@ section.news-slider {
         &.flex-active {
           background-position: -10px -124px;
         }
+      }
+    }
+  }
+}
+
+/* Blocks Section */
+section.large-blocks {
+  .block {
+    margin-bottom: 20px;
+    position: relative;
+    .title {
+      position: absolute;
+      top: 0;
+      margin-left: 25%;
+      width: 50%;
+      padding: 10px 0;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      text-align: center;
+      font-size: 1.143em;
+      text-transform: uppercase;
+    }
+    .description {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+      font-size: 1.286em;
+    }
+    &.green {
+      .description {
+        background: rgba(206,220,154, 0.8);
+      }
+      .title {
+        background: rgb(206,220,154);
+      }
+    }
+    &.blue {
+      .description {
+        background: rgba(124,180,228, 0.8);
+        color: white;
+      }
+      .title {
+        background: rgb(124,180,228);
+        color: white;
+      }
+    }
+    &.yellow {
+      .description {
+        background: rgba(238,190,44, 0.8);
+      }
+      .title {
+        background: rgb(238,190,44);
+      }
+    }
+    &.orange {
+      .description {
+        background: rgba(205,124,28, 0.8);
+        color: white;
+      }
+      .title {
+        background: rgb(205,124,28);
+        color: white;
+      }
+    }
+    &.petrol {
+      .description {
+        background: rgba(85,131,153, 0.8);
+        color: white;
+      }
+      .title {
+        background: rgb(85,131,153);
+        color: white;
+      }
+    }
+    &.purple {
+      .description {
+        background: rgba(172,159,196, 0.8);
+      }
+      .title {
+        background: rgb(172,159,196);
+      }
+    }
+  }
+}
+
+/* Facts Section */
+section.facts {
+  .fact {
+    height: 140px;
+    padding-left: 150px;
+    p {
+      min-width: 150px;
+      height: 140px;
+      margin-left: 140px;
+      padding: 5px 20px;
+      padding-right: 0;
+      vertical-align: middle;
+      display: table-cell;
+    }
+    &.people {
+      p {
+        border-top: 5px solid #a2bc6b;
+        border-bottom: 5px solid #a2bc6b;
+        color: #a2bc6b;
+      }
+      background: url(../images/facts/people.jpg) no-repeat;
+    }
+    &.companies {
+      p {
+        border-top: 5px solid #eebe2c;
+        border-bottom: 5px solid #eebe2c;
+        color: #eebe2c;
+      }
+      background: url(../images/facts/companies.jpg) no-repeat;    
+    }
+    &.countries {
+      background: url(../images/facts/countries.jpg) no-repeat;    
+      p {
+        border-top: 5px solid #548399;
+        border-bottom: 5px solid #548399;
+        color: #548399;
       }
     }
   }
