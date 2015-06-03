@@ -8616,7 +8616,7 @@ h2 {
 @media all and (min-width: 992px) {
   /* line 4, ../sass/components/_desktop.scss */
   .resp-true {
-    display: none;
+    display: none !important;
   }
 
   /* line 7, ../sass/components/_desktop.scss */
@@ -8715,19 +8715,52 @@ h2 {
   }
 }
 @media all and (min-width: 320px) and (max-width: 991px) {
-  /* line 6, ../sass/components/_smartphone.scss */
+  /* line 7, ../sass/components/_smartphone.scss */
   .resp-true {
     display: block;
   }
 
-  /* line 9, ../sass/components/_smartphone.scss */
+  /* line 10, ../sass/components/_smartphone.scss */
   .resp-false {
     display: none;
   }
 
   /* line 14, ../sass/components/_smartphone.scss */
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 19, ../sass/components/_smartphone.scss */
+  .col-md-12 {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 25, ../sass/components/_smartphone.scss */
   img {
     max-width: 100%;
+  }
+
+  /* line 30, ../sass/components/_smartphone.scss */
+  section.menu {
+    margin-top: 5px;
+    border-top: 1px solid #b4b4b4;
+  }
+  /* line 33, ../sass/components/_smartphone.scss */
+  section.menu .trigger {
+    height: 115px;
+    line-height: 115px;
+    background: #d8d4ce url(../images/sprite.png) no-repeat left -40px;
+  }
+  /* line 37, ../sass/components/_smartphone.scss */
+  section.menu .trigger a {
+    text-align: right;
+    display: block;
+    background: url(../images/sprite.png) no-repeat right -155px;
+    font-size: 1.4em;
+    font-weight: 800;
+    padding-right: 4em;
   }
 }
 /* line 18, ../sass/styles.scss */
