@@ -28,7 +28,6 @@
 
   // Menu
   section.menu {
-    margin-top: 5px;
     border-top: 1px solid $greyDark;
     .trigger {
       height: 80px;
@@ -45,11 +44,17 @@
       }
     }
     ul.items {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1000;
+      width: 95%;
       background: $textGreyDark;
       color: white;
       margin: 0;
-      padding: 0;
+      padding: 0 1em;
       li {
+        list-style: none;
         border-top: 1px solid $greyDark;
         min-height: 60px;
         line-height: 60px;
@@ -59,6 +64,7 @@
         }
         &.resp-search-menu {
           min-height: 40px;
+          border-top: none;
           form {
             padding-top: 7px;
             height: 25px;
@@ -70,6 +76,16 @@
               border: 1px solid white;
               background: $textGreyDark;
               color: white;
+              width: 80%;
+            }
+            .form-submit {
+              width: 34px;
+              height: 33px;
+              border: none;
+              background: url(../images/sprite.png) no-repeat right top;
+              text-indent: -999em;
+              cursor: pointer;
+              float: right;
             }
           }
         }

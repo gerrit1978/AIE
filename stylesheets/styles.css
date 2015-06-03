@@ -8744,16 +8744,15 @@ h2 {
 
   /* line 30, ../sass/components/_smartphone.scss */
   section.menu {
-    margin-top: 5px;
     border-top: 1px solid #b4b4b4;
   }
-  /* line 33, ../sass/components/_smartphone.scss */
+  /* line 32, ../sass/components/_smartphone.scss */
   section.menu .trigger {
     height: 80px;
     line-height: 80px;
     background: #d8d4ce url(../images/sprite.png) no-repeat left -40px;
   }
-  /* line 37, ../sass/components/_smartphone.scss */
+  /* line 36, ../sass/components/_smartphone.scss */
   section.menu .trigger a {
     text-align: right;
     display: block;
@@ -8763,35 +8762,42 @@ h2 {
     padding-right: 4em;
     border-bottom: none;
   }
-  /* line 47, ../sass/components/_smartphone.scss */
+  /* line 46, ../sass/components/_smartphone.scss */
   section.menu ul.items {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 95%;
     background: #555555;
     color: white;
     margin: 0;
-    padding: 0;
+    padding: 0 1em;
   }
-  /* line 52, ../sass/components/_smartphone.scss */
+  /* line 56, ../sass/components/_smartphone.scss */
   section.menu ul.items li {
+    list-style: none;
     border-top: 1px solid #b4b4b4;
     min-height: 60px;
     line-height: 60px;
   }
-  /* line 56, ../sass/components/_smartphone.scss */
+  /* line 61, ../sass/components/_smartphone.scss */
   section.menu ul.items li a {
     color: white;
     font-weight: 300;
   }
-  /* line 60, ../sass/components/_smartphone.scss */
+  /* line 65, ../sass/components/_smartphone.scss */
   section.menu ul.items li.resp-search-menu {
     min-height: 40px;
+    border-top: none;
   }
-  /* line 62, ../sass/components/_smartphone.scss */
+  /* line 68, ../sass/components/_smartphone.scss */
   section.menu ul.items li.resp-search-menu form {
     padding-top: 7px;
     height: 25px;
     line-height: 25px;
   }
-  /* line 66, ../sass/components/_smartphone.scss */
+  /* line 72, ../sass/components/_smartphone.scss */
   section.menu ul.items li.resp-search-menu form .form-text {
     padding-top: 3px;
     padding-bottom: 3px;
@@ -8799,6 +8805,17 @@ h2 {
     border: 1px solid white;
     background: #555555;
     color: white;
+    width: 80%;
+  }
+  /* line 81, ../sass/components/_smartphone.scss */
+  section.menu ul.items li.resp-search-menu form .form-submit {
+    width: 34px;
+    height: 33px;
+    border: none;
+    background: url(../images/sprite.png) no-repeat right top;
+    text-indent: -999em;
+    cursor: pointer;
+    float: right;
   }
 }
 /* line 18, ../sass/styles.scss */
