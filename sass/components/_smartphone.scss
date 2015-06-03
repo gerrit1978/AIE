@@ -31,16 +31,48 @@
     margin-top: 5px;
     border-top: 1px solid $greyDark;
     .trigger {
-      height: 115px;
-      line-height: 115px;
+      height: 80px;
+      line-height: 80px;
       background: $greyLight url(../images/sprite.png) no-repeat left -40px;
       a {
         text-align: right;
         display: block;
-        background: url(../images/sprite.png) no-repeat right -155px;
+        background: url(../images/sprite.png) no-repeat right -120px;
         font-size: 1.4em;
         font-weight: 800;
         padding-right: 4em;
+        border-bottom: none;
+      }
+    }
+    ul.items {
+      background: $textGreyDark;
+      color: white;
+      margin: 0;
+      padding: 0;
+      li {
+        border-top: 1px solid $greyDark;
+        min-height: 60px;
+        line-height: 60px;
+        a {
+          color: white;
+          font-weight: 300;
+        }
+        &.resp-search-menu {
+          min-height: 40px;
+          form {
+            padding-top: 7px;
+            height: 25px;
+            line-height: 25px;
+            .form-text {
+              padding-top: 3px;
+              padding-bottom: 3px;
+              border-radius: 5px;
+              border: 1px solid white;
+              background: $textGreyDark;
+              color: white;
+            }
+          }
+        }
       }
     }
   }

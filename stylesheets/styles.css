@@ -8749,18 +8749,56 @@ h2 {
   }
   /* line 33, ../sass/components/_smartphone.scss */
   section.menu .trigger {
-    height: 115px;
-    line-height: 115px;
+    height: 80px;
+    line-height: 80px;
     background: #d8d4ce url(../images/sprite.png) no-repeat left -40px;
   }
   /* line 37, ../sass/components/_smartphone.scss */
   section.menu .trigger a {
     text-align: right;
     display: block;
-    background: url(../images/sprite.png) no-repeat right -155px;
+    background: url(../images/sprite.png) no-repeat right -120px;
     font-size: 1.4em;
     font-weight: 800;
     padding-right: 4em;
+    border-bottom: none;
+  }
+  /* line 47, ../sass/components/_smartphone.scss */
+  section.menu ul.items {
+    background: #555555;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  /* line 52, ../sass/components/_smartphone.scss */
+  section.menu ul.items li {
+    border-top: 1px solid #b4b4b4;
+    min-height: 60px;
+    line-height: 60px;
+  }
+  /* line 56, ../sass/components/_smartphone.scss */
+  section.menu ul.items li a {
+    color: white;
+    font-weight: 300;
+  }
+  /* line 60, ../sass/components/_smartphone.scss */
+  section.menu ul.items li.resp-search-menu {
+    min-height: 40px;
+  }
+  /* line 62, ../sass/components/_smartphone.scss */
+  section.menu ul.items li.resp-search-menu form {
+    padding-top: 7px;
+    height: 25px;
+    line-height: 25px;
+  }
+  /* line 66, ../sass/components/_smartphone.scss */
+  section.menu ul.items li.resp-search-menu form .form-text {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background: #555555;
+    color: white;
   }
 }
 /* line 18, ../sass/styles.scss */
@@ -8823,6 +8861,5 @@ section.menu ul.items {
 }
 /* line 75, ../sass/styles.scss */
 section.menu ul.items li.item a {
-  color: #555555;
   text-decoration: none;
 }
