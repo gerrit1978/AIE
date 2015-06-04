@@ -19,6 +19,15 @@ h2 {
   margin-bottom: 0;
 }
 
+h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 1em;
+  color: $textGreyDark;
+  text-transform: uppercase;
+  
+}
+
 /* Form elements */
 .form-item {
   &.form-item-inline {

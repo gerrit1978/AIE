@@ -67,17 +67,25 @@
 	}
 	
 	section.news-slider {
-	  ul.slides {
-	    li.slide {
-	      .text {
-	        max-width: 1024px;	      
-	      }
-	    }
-	  }
-	  ol.flex-control-paging {
-	  }
-	  ul.flex-direction-nav {
-	  }
+	  .flexslider {
+	    max-width: 1280px;
+		  ul.slides {
+		    li.slide {
+		      .text {
+		        max-width: 1024px;	      
+		      }
+		    }
+		  }
+      ol.flex-control-paging {
+        max-width: 1280px !important;
+      }
+
+		}
+	}
+	
+	section.stay-informed {
+    height: 60px;
+    line-height: 60px;
 	}
 
 }

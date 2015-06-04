@@ -8592,23 +8592,32 @@ h2 {
   margin-bottom: 0;
 }
 
+/* line 22, ../sass/components/_elements.scss */
+h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 1em;
+  color: #555555;
+  text-transform: uppercase;
+}
+
 /* Form elements */
-/* line 24, ../sass/components/_elements.scss */
+/* line 33, ../sass/components/_elements.scss */
 .form-item.form-item-inline {
   display: inline-block;
 }
-/* line 28, ../sass/components/_elements.scss */
+/* line 37, ../sass/components/_elements.scss */
 .form-item label {
   font-weight: normal;
   margin-right: .5em;
 }
-/* line 34, ../sass/components/_elements.scss */
+/* line 43, ../sass/components/_elements.scss */
 .form-item input.form-text {
   border: 1px solid #555555;
   border-radius: 3px;
   padding: 2px 6px 3px 6px;
 }
-/* line 40, ../sass/components/_elements.scss */
+/* line 49, ../sass/components/_elements.scss */
 .form-item input.form-submit {
   background: #555555;
   border: none;
@@ -8618,11 +8627,11 @@ h2 {
 }
 
 /* Lists */
-/* line 52, ../sass/components/_elements.scss */
+/* line 61, ../sass/components/_elements.scss */
 .menu ul {
   list-style: none;
 }
-/* line 54, ../sass/components/_elements.scss */
+/* line 63, ../sass/components/_elements.scss */
 .menu ul li {
   list-style: none;
 }
@@ -8701,35 +8710,49 @@ h2 {
     border: none;
   }
 
-  /* line 72, ../sass/components/_desktop.scss */
-  section.news-slider ul.slides li.slide .text {
+  /* line 70, ../sass/components/_desktop.scss */
+  section.news-slider .flexslider {
+    max-width: 1280px;
+  }
+  /* line 74, ../sass/components/_desktop.scss */
+  section.news-slider .flexslider ul.slides li.slide .text {
     max-width: 1024px;
+  }
+  /* line 79, ../sass/components/_desktop.scss */
+  section.news-slider .flexslider ol.flex-control-paging {
+    max-width: 1280px !important;
+  }
+
+  /* line 86, ../sass/components/_desktop.scss */
+  section.stay-informed {
+    height: 60px;
+    line-height: 60px;
   }
 }
 /* Desktop only */
 @media all and (min-width: 1023px) {
-  /* line 88, ../sass/components/_desktop.scss */
+  /* line 96, ../sass/components/_desktop.scss */
   .container {
     max-width: 1024px;
   }
 
-  /* line 92, ../sass/components/_desktop.scss */
+  /* line 100, ../sass/components/_desktop.scss */
   .container-large {
     max-width: 1280px;
     margin: 0 auto;
   }
-  /* line 95, ../sass/components/_desktop.scss */
+  /* line 103, ../sass/components/_desktop.scss */
   .container-large:after {
     content: " ";
     display: table;
     clear: both;
   }
-  /* line 100, ../sass/components/_desktop.scss */
+  /* line 108, ../sass/components/_desktop.scss */
   .container-large .row {
     clear: both;
     margin-bottom: 20px;
   }
-  /* line 104, ../sass/components/_desktop.scss */
+  /* line 112, ../sass/components/_desktop.scss */
   .container-large .col-md-4 {
     margin: 0;
     padding: 0;
@@ -8922,6 +8945,23 @@ h2 {
   section.facts .fact p {
     margin-left: 145px !important;
   }
+
+  /* Stay Informed */
+  /* line 176, ../sass/components/_smartphone.scss */
+  section.stay-informed {
+    padding: 2em 0;
+  }
+  /* line 178, ../sass/components/_smartphone.scss */
+  section.stay-informed strong {
+    font-size: 1.2em;
+  }
+
+  /* Partners */
+  /* line 185, ../sass/components/_smartphone.scss */
+  section.partners .container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 /* General Sections & Page Layout */
 /* line 19, ../sass/styles.scss */
@@ -8948,17 +8988,15 @@ section.large-blocks {
 section.stay-informed {
   background: #0896d6;
   color: white;
-  height: 60px;
-  line-height: 60px;
 }
-/* line 43, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 section.footer {
   background: #d8d4ce;
   color: #555555;
   min-height: 400px;
   padding-top: 2em;
 }
-/* line 51, ../sass/styles.scss */
+/* line 49, ../sass/styles.scss */
 section.separator .container {
   height: 0;
   border-top: 3px solid #b4b4b4;
@@ -8972,67 +9010,71 @@ section.separator .container {
 }
 
 /* Menu Section */
-/* line 67, ../sass/styles.scss */
+/* line 65, ../sass/styles.scss */
 section.menu ul.items li.item a {
   text-decoration: none;
 }
-/* line 70, ../sass/styles.scss */
+/* line 68, ../sass/styles.scss */
 section.menu ul.items li.item ul {
   display: none;
 }
 
 /* News slider Section */
-/* line 78, ../sass/styles.scss */
+/* line 76, ../sass/styles.scss */
 section.news-slider {
   position: relative;
   padding-bottom: 40px;
 }
+/* line 79, ../sass/styles.scss */
+section.news-slider .flexslider {
+  width: 100%;
+}
 /* line 81, ../sass/styles.scss */
-section.news-slider ul.slides {
+section.news-slider .flexslider ul.slides {
   margin: 0;
   padding: 0;
 }
 /* line 84, ../sass/styles.scss */
-section.news-slider ul.slides li.slide {
+section.news-slider .flexslider ul.slides li.slide {
   background: #d8d4ce;
   margin: 0;
   padding: 0;
 }
 /* line 88, ../sass/styles.scss */
-section.news-slider ul.slides li.slide .text {
+section.news-slider .flexslider ul.slides li.slide .text {
   padding-top: 10px;
   padding-bottom: 20px;
   margin: 0 auto;
   text-align: center;
 }
 /* line 93, ../sass/styles.scss */
-section.news-slider ul.slides li.slide .text a.more {
+section.news-slider .flexslider ul.slides li.slide .text a.more {
   background: white;
   border: 1px solid #555555;
   border-radius: 5px;
   padding: 5px 20px;
 }
 /* line 102, ../sass/styles.scss */
-section.news-slider ol.flex-control-paging {
+section.news-slider .flexslider ol.flex-control-paging {
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: auto;
+  bottom: 5px;
+  text-align: center;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   list-style: none;
 }
 /* line 110, ../sass/styles.scss */
-section.news-slider ol.flex-control-paging li {
+section.news-slider .flexslider ol.flex-control-paging li {
   margin: 0;
   padding: 0;
-  float: left;
   width: 10px;
+  display: inline-block;
   height: 10px;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 /* line 117, ../sass/styles.scss */
-section.news-slider ol.flex-control-paging li a {
+section.news-slider .flexslider ol.flex-control-paging li a {
   display: block;
   width: 10px;
   height: 10px;
@@ -9041,17 +9083,17 @@ section.news-slider ol.flex-control-paging li a {
   cursor: pointer;
 }
 /* line 124, ../sass/styles.scss */
-section.news-slider ol.flex-control-paging li a.flex-active {
+section.news-slider .flexslider ol.flex-control-paging li a.flex-active {
   background-position: -10px -124px;
 }
 
 /* Blocks Section */
-/* line 134, ../sass/styles.scss */
+/* line 135, ../sass/styles.scss */
 section.large-blocks .block {
   margin-bottom: 20px;
   position: relative;
 }
-/* line 137, ../sass/styles.scss */
+/* line 138, ../sass/styles.scss */
 section.large-blocks .block .title {
   position: absolute;
   top: 0;
@@ -9064,7 +9106,7 @@ section.large-blocks .block .title {
   font-size: 1.143em;
   text-transform: uppercase;
 }
-/* line 149, ../sass/styles.scss */
+/* line 150, ../sass/styles.scss */
 section.large-blocks .block .description {
   position: absolute;
   bottom: 0;
@@ -9073,68 +9115,68 @@ section.large-blocks .block .description {
   text-align: center;
   font-size: 1.286em;
 }
-/* line 158, ../sass/styles.scss */
+/* line 159, ../sass/styles.scss */
 section.large-blocks .block.green .description {
   background: rgba(206, 220, 154, 0.8);
 }
-/* line 161, ../sass/styles.scss */
+/* line 162, ../sass/styles.scss */
 section.large-blocks .block.green .title {
   background: #cedc9a;
 }
-/* line 166, ../sass/styles.scss */
+/* line 167, ../sass/styles.scss */
 section.large-blocks .block.blue .description {
   background: rgba(124, 180, 228, 0.8);
   color: white;
 }
-/* line 170, ../sass/styles.scss */
+/* line 171, ../sass/styles.scss */
 section.large-blocks .block.blue .title {
   background: #7cb4e4;
   color: white;
 }
-/* line 176, ../sass/styles.scss */
+/* line 177, ../sass/styles.scss */
 section.large-blocks .block.yellow .description {
   background: rgba(238, 190, 44, 0.8);
 }
-/* line 179, ../sass/styles.scss */
+/* line 180, ../sass/styles.scss */
 section.large-blocks .block.yellow .title {
   background: #eebe2c;
 }
-/* line 184, ../sass/styles.scss */
+/* line 185, ../sass/styles.scss */
 section.large-blocks .block.orange .description {
   background: rgba(205, 124, 28, 0.8);
   color: white;
 }
-/* line 188, ../sass/styles.scss */
+/* line 189, ../sass/styles.scss */
 section.large-blocks .block.orange .title {
   background: #cd7c1c;
   color: white;
 }
-/* line 194, ../sass/styles.scss */
+/* line 195, ../sass/styles.scss */
 section.large-blocks .block.petrol .description {
   background: rgba(85, 131, 153, 0.8);
   color: white;
 }
-/* line 198, ../sass/styles.scss */
+/* line 199, ../sass/styles.scss */
 section.large-blocks .block.petrol .title {
   background: #558399;
   color: white;
 }
-/* line 204, ../sass/styles.scss */
+/* line 205, ../sass/styles.scss */
 section.large-blocks .block.purple .description {
   background: rgba(172, 159, 196, 0.8);
 }
-/* line 207, ../sass/styles.scss */
+/* line 208, ../sass/styles.scss */
 section.large-blocks .block.purple .title {
   background: #ac9fc4;
 }
 
 /* Facts Section */
-/* line 216, ../sass/styles.scss */
+/* line 217, ../sass/styles.scss */
 section.facts .fact {
   height: 140px;
   padding-left: 150px;
 }
-/* line 219, ../sass/styles.scss */
+/* line 220, ../sass/styles.scss */
 section.facts .fact p {
   min-width: 150px;
   height: 140px;
@@ -9144,33 +9186,65 @@ section.facts .fact p {
   vertical-align: middle;
   display: table-cell;
 }
-/* line 228, ../sass/styles.scss */
+/* line 229, ../sass/styles.scss */
 section.facts .fact.people {
   background: url(../images/facts/people.jpg) no-repeat;
 }
-/* line 229, ../sass/styles.scss */
+/* line 230, ../sass/styles.scss */
 section.facts .fact.people p {
   border-top: 5px solid #a2bc6b;
   border-bottom: 5px solid #a2bc6b;
   color: #a2bc6b;
 }
-/* line 236, ../sass/styles.scss */
+/* line 237, ../sass/styles.scss */
 section.facts .fact.companies {
   background: url(../images/facts/companies.jpg) no-repeat;
 }
-/* line 237, ../sass/styles.scss */
+/* line 238, ../sass/styles.scss */
 section.facts .fact.companies p {
   border-top: 5px solid #eebe2c;
   border-bottom: 5px solid #eebe2c;
   color: #eebe2c;
 }
-/* line 244, ../sass/styles.scss */
+/* line 245, ../sass/styles.scss */
 section.facts .fact.countries {
   background: url(../images/facts/countries.jpg) no-repeat;
 }
-/* line 246, ../sass/styles.scss */
+/* line 247, ../sass/styles.scss */
 section.facts .fact.countries p {
   border-top: 5px solid #548399;
   border-bottom: 5px solid #548399;
   color: #548399;
+}
+
+/* Stay Informed Section */
+/* line 258, ../sass/styles.scss */
+section.stay-informed form {
+  text-align: right;
+}
+/* line 260, ../sass/styles.scss */
+section.stay-informed form .form-text, section.stay-informed form .form-email, section.stay-informed form .form-submit {
+  height: 30px;
+  line-height: 30px;
+}
+/* line 264, ../sass/styles.scss */
+section.stay-informed form .form-email {
+  border: 1px solid white;
+  border-radius: 5px;
+  background: #0896d6;
+  color: white;
+  margin-top: 15px;
+  padding: 0;
+  margin-right: 10px;
+  padding: 0 10px;
+  min-width: 80%;
+}
+/* line 275, ../sass/styles.scss */
+section.stay-informed form .form-submit {
+  background: white;
+  color: #0896d6;
+  border-radius: 5px;
+  border: none;
+  padding: 0 10px;
+  text-transform: uppercase;
 }

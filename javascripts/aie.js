@@ -4,6 +4,11 @@ jQuery(document).ready(function($) {
     directionNav: false
   });
   
+  $('.flexslider-partners').flexslider({
+    animation: "slide",
+    controlNav: false
+  });
+  
   // subitems on menu
   $('.menu ul li').click(function(e) {
     if ($(this).children("ul.subitems").length) {
