@@ -51,14 +51,10 @@
       border: none !important;
     }
     ul.items {
-	    /* TEMP */
-	    display: none;
-	    /* END TEMP */
     
       position: fixed;
       top: 0;
-/*      left: 100%; */
-      right: 0;
+      left: 100%;
       z-index: 1000;
       width: 95%;
       background: $textGreyDark;
@@ -149,6 +145,8 @@
 	section.news-slider {
 	  margin-top: 20px;
 	  ul.slides {
+	    margin: 0;
+	    padding: 0;
 	    li.slide {
 	      .text {
           padding: 0 20px;
@@ -171,6 +169,18 @@
       }
     }
   }
+
+  /* Partners */
+  section.partners {
+    .container {
+	    margin-left: 10px;
+	    margin-right: 10px;
+	    ul.slides {
+	      li.slide {
+	      }
+	    }
+	  }
+  }
   
   /* Stay Informed */
   section.stay-informed {
@@ -180,12 +190,5 @@
     }
   } 
 
-  /* Partners */
-  section.partners {
-    .container {
-	    margin-left: 10px;
-	    margin-right: 10px;
-	  }
-  }
 
 }
