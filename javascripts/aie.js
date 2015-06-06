@@ -25,7 +25,7 @@ jQuery(document).ready(function($) {
   });
   
   // responsive menu
-  $('section.menu .trigger').click(function(e) {
+  $('nav.menu .trigger').click(function(e) {
     var menu = $(this).parent().find('ul.items');
     var left = menu.css('left').replace('px', '');
     if (left > 300) {
@@ -39,8 +39,8 @@ jQuery(document).ready(function($) {
       }, 500, 'easeOutCubic');
     }
   });
-  $('section.menu .resp-close a').click(function(e) {
-    $('section.menu ul.items').animate({
+  $('nav.menu .resp-close a').click(function(e) {
+    $('nav.menu ul.items').animate({
       left: "100%"
     }, 500, 'easeOutCubic');
   });

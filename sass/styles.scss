@@ -15,15 +15,16 @@
 @import "components/smartphone";
 
 /* General Sections & Page Layout */
+nav {
+  &.menu {
+    background: $greyLight;
+  }
+}
+
 section {
   &.header {
     margin-top: 20px;
     margin-bottom: 20px;
-  }
-  &.menu {
-    background: $greyLight;
-  }
-  &.news-slider {
   }
   &.upcoming {
     padding-top: 2em;
@@ -59,7 +60,7 @@ section {
 
 
 /* Menu Section */
-section.menu {
+nav.menu {
   ul.items {
     li.item {
       a {

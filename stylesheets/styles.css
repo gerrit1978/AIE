@@ -8658,20 +8658,20 @@ h3 {
   }
 
   /* line 22, ../sass/components/_desktop.scss */
-  section.menu {
+  nav.menu {
     height: 40px;
     line-height: 40px;
     margin-bottom: 20px;
   }
   /* line 27, ../sass/components/_desktop.scss */
-  section.menu ul.main-menu {
+  nav.menu ul.main-menu {
     margin: 0;
     padding: 0;
     font-size: 1.143em;
     font-weight: 800;
   }
   /* line 32, ../sass/components/_desktop.scss */
-  section.menu ul.main-menu li.item {
+  nav.menu ul.main-menu li.item {
     margin: 0;
     padding: 0;
     display: inline-block;
@@ -8682,20 +8682,20 @@ h3 {
     color: #555555;
   }
   /* line 41, ../sass/components/_desktop.scss */
-  section.menu ul.main-menu li.item.home {
+  nav.menu ul.main-menu li.item.home {
     background: url(../images/sprite.png) no-repeat left top;
     width: 30px;
     text-indent: -999em;
   }
   /* line 45, ../sass/components/_desktop.scss */
-  section.menu ul.main-menu li.item.home a {
+  nav.menu ul.main-menu li.item.home a {
     display: block;
     width: 30px;
     height: 40px;
     border: none;
   }
   /* line 52, ../sass/components/_desktop.scss */
-  section.menu ul.main-menu li.item.search {
+  nav.menu ul.main-menu li.item.search {
     background: url(../images/sprite.png) no-repeat right -37px;
     width: 32px;
     height: 40px;
@@ -8703,7 +8703,7 @@ h3 {
     margin-right: 0;
   }
   /* line 58, ../sass/components/_desktop.scss */
-  section.menu ul.main-menu li.item.search a {
+  nav.menu ul.main-menu li.item.search a {
     display: block;
     width: 32px;
     height: 40px;
@@ -8771,57 +8771,62 @@ h3 {
   }
 
   /* line 10, ../sass/components/_tablet.scss */
-  section.menu ul.main-menu li.item {
+  nav.menu ul.main-menu li.item {
     margin-right: 40px;
   }
 }
 @media all and (min-width: 320px) and (max-width: 991px) {
   /* line 7, ../sass/components/_smartphone.scss */
+  .main {
+    overflow-x: hidden !important;
+  }
+
+  /* line 12, ../sass/components/_smartphone.scss */
   .resp-true {
     display: block;
   }
 
-  /* line 10, ../sass/components/_smartphone.scss */
+  /* line 15, ../sass/components/_smartphone.scss */
   .resp-false {
     display: none;
   }
 
-  /* line 14, ../sass/components/_smartphone.scss */
+  /* line 19, ../sass/components/_smartphone.scss */
   .container {
     margin: 0;
     padding: 0;
   }
 
-  /* line 19, ../sass/components/_smartphone.scss */
+  /* line 24, ../sass/components/_smartphone.scss */
   .col-md-12 {
     margin: 0;
     padding: 0;
   }
 
-  /* line 23, ../sass/components/_smartphone.scss */
+  /* line 28, ../sass/components/_smartphone.scss */
   .col-md-4 {
     margin: 0;
     padding: 0;
   }
 
-  /* line 29, ../sass/components/_smartphone.scss */
+  /* line 34, ../sass/components/_smartphone.scss */
   img {
     max-width: 100%;
   }
 
   /* Menu */
-  /* line 34, ../sass/components/_smartphone.scss */
-  section.menu {
+  /* line 39, ../sass/components/_smartphone.scss */
+  nav.menu {
     border-top: 1px solid #b4b4b4;
   }
-  /* line 36, ../sass/components/_smartphone.scss */
-  section.menu .trigger {
+  /* line 41, ../sass/components/_smartphone.scss */
+  nav.menu .trigger {
     height: 80px;
     line-height: 80px;
     background: #d8d4ce url(../images/sprite.png) no-repeat left -40px;
   }
-  /* line 40, ../sass/components/_smartphone.scss */
-  section.menu .trigger a {
+  /* line 45, ../sass/components/_smartphone.scss */
+  nav.menu .trigger a {
     text-align: right;
     display: block;
     background: url(../images/sprite.png) no-repeat right -120px;
@@ -8830,12 +8835,12 @@ h3 {
     padding-right: 4em;
     border: none;
   }
-  /* line 50, ../sass/components/_smartphone.scss */
-  section.menu a {
+  /* line 55, ../sass/components/_smartphone.scss */
+  nav.menu a {
     border: none !important;
   }
-  /* line 53, ../sass/components/_smartphone.scss */
-  section.menu ul.items {
+  /* line 58, ../sass/components/_smartphone.scss */
+  nav.menu ul.items {
     position: absolute;
     top: 0;
     left: 100%;
@@ -8847,71 +8852,71 @@ h3 {
     padding: 0 1em;
     padding-top: 45px;
   }
-  /* line 64, ../sass/components/_smartphone.scss */
-  section.menu ul.items li.item {
+  /* line 69, ../sass/components/_smartphone.scss */
+  nav.menu ul.items li.item {
     list-style: none;
     border-top: 1px solid #b4b4b4;
     min-height: 35px;
     line-height: 35px;
     background: url(../images/sprite.png) no-repeat right -200px;
   }
-  /* line 70, ../sass/components/_smartphone.scss */
-  section.menu ul.items li.item.expanded {
+  /* line 75, ../sass/components/_smartphone.scss */
+  nav.menu ul.items li.item.expanded {
     background-position: right -233px;
   }
-  /* line 72, ../sass/components/_smartphone.scss */
-  section.menu ul.items li.item.expanded a {
+  /* line 77, ../sass/components/_smartphone.scss */
+  nav.menu ul.items li.item.expanded a {
     color: #d8d4ce;
   }
-  /* line 76, ../sass/components/_smartphone.scss */
-  section.menu ul.items li.item a {
+  /* line 81, ../sass/components/_smartphone.scss */
+  nav.menu ul.items li.item a {
     color: white;
     font-weight: 300;
     display: block;
   }
-  /* line 81, ../sass/components/_smartphone.scss */
-  section.menu ul.items li.item ul.subitems {
+  /* line 86, ../sass/components/_smartphone.scss */
+  nav.menu ul.items li.item ul.subitems {
     margin-left: 0;
     padding-left: 1em;
   }
-  /* line 84, ../sass/components/_smartphone.scss */
-  section.menu ul.items li.item ul.subitems li.subitem {
+  /* line 89, ../sass/components/_smartphone.scss */
+  nav.menu ul.items li.item ul.subitems li.subitem {
     margin: 0;
     padding: 0;
   }
-  /* line 87, ../sass/components/_smartphone.scss */
-  section.menu ul.items li.item ul.subitems li.subitem a {
+  /* line 92, ../sass/components/_smartphone.scss */
+  nav.menu ul.items li.item ul.subitems li.subitem a {
     color: white;
   }
-  /* line 92, ../sass/components/_smartphone.scss */
-  section.menu ul.items li.item.resp-close {
+  /* line 97, ../sass/components/_smartphone.scss */
+  nav.menu ul.items li.item.resp-close {
     border: none;
     background: none;
     position: absolute;
     right: 15px;
     top: 10px;
   }
-  /* line 98, ../sass/components/_smartphone.scss */
-  section.menu ul.items li.item.resp-close a {
+  /* line 103, ../sass/components/_smartphone.scss */
+  nav.menu ul.items li.item.resp-close a {
     width: 27px;
     height: 27px;
     display: block;
     text-indent: -999em;
     background: url(../images/sprite.png) no-repeat right -84px;
   }
-  /* line 106, ../sass/components/_smartphone.scss */
-  section.menu ul.items li.item.resp-search-menu {
+  /* line 111, ../sass/components/_smartphone.scss */
+  nav.menu ul.items li.item.resp-search-menu {
     min-height: 35px;
     border-top: none;
   }
-  /* line 109, ../sass/components/_smartphone.scss */
-  section.menu ul.items li.item.resp-search-menu form {
+  /* line 114, ../sass/components/_smartphone.scss */
+  nav.menu ul.items li.item.resp-search-menu form {
     padding-top: 3px;
     height: 25px;
     line-height: 25px;
   }
-  /* line 113, ../sass/components/_smartphone.scss */
-  section.menu ul.items li.item.resp-search-menu form .form-text {
+  /* line 118, ../sass/components/_smartphone.scss */
+  nav.menu ul.items li.item.resp-search-menu form .form-text {
     padding: 3px;
     border-radius: 5px;
     border: 1px solid white;
@@ -8920,8 +8925,8 @@ h3 {
     width: 80%;
     font-weight: 300;
   }
-  /* line 122, ../sass/components/_smartphone.scss */
-  section.menu ul.items li.item.resp-search-menu form .form-submit {
+  /* line 127, ../sass/components/_smartphone.scss */
+  nav.menu ul.items li.item.resp-search-menu form .form-submit {
     width: 34px;
     height: 33px;
     border: none;
@@ -8930,107 +8935,108 @@ h3 {
     cursor: pointer;
     float: right;
   }
-  /* line 133, ../sass/components/_smartphone.scss */
-  section.menu ul.items li.item.resp-login {
+  /* line 138, ../sass/components/_smartphone.scss */
+  nav.menu ul.items li.item.resp-login {
     margin-bottom: 20px;
     border-bottom: 1px solid #b4b4b4;
   }
-  /* line 137, ../sass/components/_smartphone.scss */
-  section.menu ul.items li.item.resp-footer-menu {
+  /* line 142, ../sass/components/_smartphone.scss */
+  nav.menu ul.items li.item.resp-footer-menu {
     background: none;
     padding-top: 15px;
     line-height: 1.2em !important;
   }
-  /* line 141, ../sass/components/_smartphone.scss */
-  section.menu ul.items li.item.resp-footer-menu img {
+  /* line 146, ../sass/components/_smartphone.scss */
+  nav.menu ul.items li.item.resp-footer-menu img {
     float: left;
   }
-  /* line 144, ../sass/components/_smartphone.scss */
-  section.menu ul.items li.item.resp-footer-menu p, section.menu ul.items li.item.resp-footer-menu h2 {
+  /* line 149, ../sass/components/_smartphone.scss */
+  nav.menu ul.items li.item.resp-footer-menu p, nav.menu ul.items li.item.resp-footer-menu h2 {
     margin-left: 80px;
   }
-  /* line 148, ../sass/components/_smartphone.scss */
-  section.menu ul.items li.item.resp-footer-menu a:hover {
+  /* line 153, ../sass/components/_smartphone.scss */
+  nav.menu ul.items li.item.resp-footer-menu a:hover {
     border-bottom: 1px solid white;
   }
 
   /* News Slider */
-  /* line 158, ../sass/components/_smartphone.scss */
+  /* line 163, ../sass/components/_smartphone.scss */
   section.news-slider {
     margin-top: 20px;
   }
-  /* line 160, ../sass/components/_smartphone.scss */
+  /* line 165, ../sass/components/_smartphone.scss */
   section.news-slider ul.slides {
     margin: 0;
     padding: 0;
   }
-  /* line 164, ../sass/components/_smartphone.scss */
+  /* line 169, ../sass/components/_smartphone.scss */
   section.news-slider ul.slides li.slide .text {
     padding: 0 20px;
   }
 
   /* Facts */
-  /* line 177, ../sass/components/_smartphone.scss */
+  /* line 182, ../sass/components/_smartphone.scss */
   section.facts .fact {
     margin: 0 10px;
     margin-bottom: 10px;
   }
-  /* line 180, ../sass/components/_smartphone.scss */
+  /* line 185, ../sass/components/_smartphone.scss */
   section.facts .fact p {
     margin-left: 145px !important;
   }
 
   /* Partners */
-  /* line 188, ../sass/components/_smartphone.scss */
+  /* line 193, ../sass/components/_smartphone.scss */
   section.partners .container {
     margin-left: 10px;
     margin-right: 10px;
   }
 
   /* Stay Informed */
-  /* line 199, ../sass/components/_smartphone.scss */
+  /* line 204, ../sass/components/_smartphone.scss */
   section.stay-informed {
     padding: 2em 0;
   }
-  /* line 201, ../sass/components/_smartphone.scss */
+  /* line 206, ../sass/components/_smartphone.scss */
   section.stay-informed strong {
     font-size: 1.2em;
   }
 }
 /* General Sections & Page Layout */
 /* line 19, ../sass/styles.scss */
+nav.menu {
+  background: #d8d4ce;
+}
+
+/* line 25, ../sass/styles.scss */
 section.header {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-/* line 23, ../sass/styles.scss */
-section.menu {
-  background: #d8d4ce;
-}
-/* line 28, ../sass/styles.scss */
+/* line 29, ../sass/styles.scss */
 section.upcoming {
   padding-top: 2em;
   padding-bottom: 2em;
   background: #d5a306;
   color: white;
 }
-/* line 34, ../sass/styles.scss */
+/* line 35, ../sass/styles.scss */
 section.large-blocks {
   margin-top: 20px;
 }
-/* line 37, ../sass/styles.scss */
+/* line 38, ../sass/styles.scss */
 section.stay-informed {
   background: #0896d6;
   color: white;
 }
-/* line 41, ../sass/styles.scss */
+/* line 42, ../sass/styles.scss */
 section.footer {
   background: #d8d4ce;
   color: #555555;
   min-height: 400px;
   padding-top: 2em;
 }
-/* line 49, ../sass/styles.scss */
+/* line 50, ../sass/styles.scss */
 section.separator .container {
   height: 0;
   border-top: 3px solid #b4b4b4;
@@ -9044,51 +9050,51 @@ section.separator .container {
 }
 
 /* Menu Section */
-/* line 65, ../sass/styles.scss */
-section.menu ul.items li.item a {
+/* line 66, ../sass/styles.scss */
+nav.menu ul.items li.item a {
   text-decoration: none;
 }
-/* line 68, ../sass/styles.scss */
-section.menu ul.items li.item ul {
+/* line 69, ../sass/styles.scss */
+nav.menu ul.items li.item ul {
   display: none;
 }
 
 /* News slider Section */
-/* line 76, ../sass/styles.scss */
+/* line 77, ../sass/styles.scss */
 section.news-slider {
   position: relative;
   padding-bottom: 40px;
 }
-/* line 79, ../sass/styles.scss */
+/* line 80, ../sass/styles.scss */
 section.news-slider .flexslider {
   width: 100%;
 }
-/* line 81, ../sass/styles.scss */
+/* line 82, ../sass/styles.scss */
 section.news-slider .flexslider ul.slides {
   margin: 0;
   padding: 0;
 }
-/* line 84, ../sass/styles.scss */
+/* line 85, ../sass/styles.scss */
 section.news-slider .flexslider ul.slides li.slide {
   background: #d8d4ce;
   margin: 0;
   padding: 0;
 }
-/* line 88, ../sass/styles.scss */
+/* line 89, ../sass/styles.scss */
 section.news-slider .flexslider ul.slides li.slide .text {
   padding-top: 10px;
   padding-bottom: 20px;
   margin: 0 auto;
   text-align: center;
 }
-/* line 93, ../sass/styles.scss */
+/* line 94, ../sass/styles.scss */
 section.news-slider .flexslider ul.slides li.slide .text a.more {
   background: white;
   border: 1px solid #555555;
   border-radius: 5px;
   padding: 5px 20px;
 }
-/* line 102, ../sass/styles.scss */
+/* line 103, ../sass/styles.scss */
 section.news-slider .flexslider ol.flex-control-paging {
   position: absolute;
   bottom: 5px;
@@ -9098,7 +9104,7 @@ section.news-slider .flexslider ol.flex-control-paging {
   padding: 0;
   list-style: none;
 }
-/* line 110, ../sass/styles.scss */
+/* line 111, ../sass/styles.scss */
 section.news-slider .flexslider ol.flex-control-paging li {
   margin: 0;
   padding: 0;
@@ -9107,7 +9113,7 @@ section.news-slider .flexslider ol.flex-control-paging li {
   height: 10px;
   margin-right: 10px;
 }
-/* line 117, ../sass/styles.scss */
+/* line 118, ../sass/styles.scss */
 section.news-slider .flexslider ol.flex-control-paging li a {
   display: block;
   width: 10px;
@@ -9116,18 +9122,18 @@ section.news-slider .flexslider ol.flex-control-paging li a {
   text-indent: -999em;
   cursor: pointer;
 }
-/* line 124, ../sass/styles.scss */
+/* line 125, ../sass/styles.scss */
 section.news-slider .flexslider ol.flex-control-paging li a.flex-active {
   background-position: -10px -124px;
 }
 
 /* Blocks Section */
-/* line 135, ../sass/styles.scss */
+/* line 136, ../sass/styles.scss */
 section.large-blocks .block {
   margin-bottom: 20px;
   position: relative;
 }
-/* line 138, ../sass/styles.scss */
+/* line 139, ../sass/styles.scss */
 section.large-blocks .block .title {
   position: absolute;
   top: 0;
@@ -9140,7 +9146,7 @@ section.large-blocks .block .title {
   font-size: 1.143em;
   text-transform: uppercase;
 }
-/* line 150, ../sass/styles.scss */
+/* line 151, ../sass/styles.scss */
 section.large-blocks .block .description {
   position: absolute;
   bottom: 0;
@@ -9149,68 +9155,68 @@ section.large-blocks .block .description {
   text-align: center;
   font-size: 1.286em;
 }
-/* line 159, ../sass/styles.scss */
+/* line 160, ../sass/styles.scss */
 section.large-blocks .block.green .description {
   background: rgba(206, 220, 154, 0.8);
 }
-/* line 162, ../sass/styles.scss */
+/* line 163, ../sass/styles.scss */
 section.large-blocks .block.green .title {
   background: #cedc9a;
 }
-/* line 167, ../sass/styles.scss */
+/* line 168, ../sass/styles.scss */
 section.large-blocks .block.blue .description {
   background: rgba(124, 180, 228, 0.8);
   color: white;
 }
-/* line 171, ../sass/styles.scss */
+/* line 172, ../sass/styles.scss */
 section.large-blocks .block.blue .title {
   background: #7cb4e4;
   color: white;
 }
-/* line 177, ../sass/styles.scss */
+/* line 178, ../sass/styles.scss */
 section.large-blocks .block.yellow .description {
   background: rgba(238, 190, 44, 0.8);
 }
-/* line 180, ../sass/styles.scss */
+/* line 181, ../sass/styles.scss */
 section.large-blocks .block.yellow .title {
   background: #eebe2c;
 }
-/* line 185, ../sass/styles.scss */
+/* line 186, ../sass/styles.scss */
 section.large-blocks .block.orange .description {
   background: rgba(205, 124, 28, 0.8);
   color: white;
 }
-/* line 189, ../sass/styles.scss */
+/* line 190, ../sass/styles.scss */
 section.large-blocks .block.orange .title {
   background: #cd7c1c;
   color: white;
 }
-/* line 195, ../sass/styles.scss */
+/* line 196, ../sass/styles.scss */
 section.large-blocks .block.petrol .description {
   background: rgba(85, 131, 153, 0.8);
   color: white;
 }
-/* line 199, ../sass/styles.scss */
+/* line 200, ../sass/styles.scss */
 section.large-blocks .block.petrol .title {
   background: #558399;
   color: white;
 }
-/* line 205, ../sass/styles.scss */
+/* line 206, ../sass/styles.scss */
 section.large-blocks .block.purple .description {
   background: rgba(172, 159, 196, 0.8);
 }
-/* line 208, ../sass/styles.scss */
+/* line 209, ../sass/styles.scss */
 section.large-blocks .block.purple .title {
   background: #ac9fc4;
 }
 
 /* Facts Section */
-/* line 217, ../sass/styles.scss */
+/* line 218, ../sass/styles.scss */
 section.facts .fact {
   height: 140px;
   padding-left: 150px;
 }
-/* line 220, ../sass/styles.scss */
+/* line 221, ../sass/styles.scss */
 section.facts .fact p {
   min-width: 150px;
   height: 140px;
@@ -9220,31 +9226,31 @@ section.facts .fact p {
   vertical-align: middle;
   display: table-cell;
 }
-/* line 229, ../sass/styles.scss */
+/* line 230, ../sass/styles.scss */
 section.facts .fact.people {
   background: url(../images/facts/people.jpg) no-repeat;
 }
-/* line 230, ../sass/styles.scss */
+/* line 231, ../sass/styles.scss */
 section.facts .fact.people p {
   border-top: 5px solid #a2bc6b;
   border-bottom: 5px solid #a2bc6b;
   color: #a2bc6b;
 }
-/* line 237, ../sass/styles.scss */
+/* line 238, ../sass/styles.scss */
 section.facts .fact.companies {
   background: url(../images/facts/companies.jpg) no-repeat;
 }
-/* line 238, ../sass/styles.scss */
+/* line 239, ../sass/styles.scss */
 section.facts .fact.companies p {
   border-top: 5px solid #eebe2c;
   border-bottom: 5px solid #eebe2c;
   color: #eebe2c;
 }
-/* line 245, ../sass/styles.scss */
+/* line 246, ../sass/styles.scss */
 section.facts .fact.countries {
   background: url(../images/facts/countries.jpg) no-repeat;
 }
-/* line 247, ../sass/styles.scss */
+/* line 248, ../sass/styles.scss */
 section.facts .fact.countries p {
   border-top: 5px solid #548399;
   border-bottom: 5px solid #548399;
@@ -9252,23 +9258,23 @@ section.facts .fact.countries p {
 }
 
 /* Partners Section */
-/* line 258, ../sass/styles.scss */
+/* line 259, ../sass/styles.scss */
 section.partners .flexslider-partners {
   position: relative;
   margin-bottom: 20px;
 }
-/* line 261, ../sass/styles.scss */
+/* line 262, ../sass/styles.scss */
 section.partners .flexslider-partners ul.slides {
   margin: 0;
   padding: 0;
 }
-/* line 264, ../sass/styles.scss */
+/* line 265, ../sass/styles.scss */
 section.partners .flexslider-partners ul.slides li.slide {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 271, ../sass/styles.scss */
+/* line 272, ../sass/styles.scss */
 section.partners .flexslider-partners ul.flex-direction-nav li {
   position: absolute;
   top: 10%;
@@ -9277,16 +9283,16 @@ section.partners .flexslider-partners ul.flex-direction-nav li {
   background: url(../images/sprite.png) no-repeat left -140px;
   text-indent: -999em;
 }
-/* line 278, ../sass/styles.scss */
+/* line 279, ../sass/styles.scss */
 section.partners .flexslider-partners ul.flex-direction-nav li.flex-nav-prev {
   left: 10px;
 }
-/* line 281, ../sass/styles.scss */
+/* line 282, ../sass/styles.scss */
 section.partners .flexslider-partners ul.flex-direction-nav li.flex-nav-next {
   right: 10px;
   background-position: -19px -140px;
 }
-/* line 285, ../sass/styles.scss */
+/* line 286, ../sass/styles.scss */
 section.partners .flexslider-partners ul.flex-direction-nav li a {
   display: block;
   height: 87px;
@@ -9294,16 +9300,16 @@ section.partners .flexslider-partners ul.flex-direction-nav li a {
 }
 
 /* Stay Informed Section */
-/* line 297, ../sass/styles.scss */
+/* line 298, ../sass/styles.scss */
 section.stay-informed form {
   text-align: right;
 }
-/* line 299, ../sass/styles.scss */
+/* line 300, ../sass/styles.scss */
 section.stay-informed form .form-text, section.stay-informed form .form-email, section.stay-informed form .form-submit {
   height: 30px;
   line-height: 30px;
 }
-/* line 303, ../sass/styles.scss */
+/* line 304, ../sass/styles.scss */
 section.stay-informed form .form-email {
   border: 1px solid white;
   border-radius: 5px;
@@ -9315,7 +9321,7 @@ section.stay-informed form .form-email {
   padding: 0 10px;
   min-width: 75%;
 }
-/* line 314, ../sass/styles.scss */
+/* line 315, ../sass/styles.scss */
 section.stay-informed form .form-submit {
   background: white;
   color: #0896d6;

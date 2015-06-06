@@ -3,6 +3,11 @@
 
 @media all and (min-width: 320px) and (max-width: 991px) {
 
+  // Fix menu issue
+  .main {
+    overflow-x: hidden !important;
+  }
+
   // Genereal
   .resp-true {
     display: block; 
@@ -31,7 +36,7 @@
   }
 
   /* Menu */
-  section.menu {
+  nav.menu {
     border-top: 1px solid $greyDark;
     .trigger {
       height: 80px;
