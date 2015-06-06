@@ -8836,7 +8836,7 @@ h3 {
   }
   /* line 53, ../sass/components/_smartphone.scss */
   section.menu ul.items {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 100%;
     z-index: 1000;
