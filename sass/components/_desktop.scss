@@ -1,5 +1,6 @@
 /* Desktop and tablet */
-@media all and (min-width: 992px) {
+/*@media all and (min-width: 992px) { */
+@media all and (min-width: 768px) {
 
   .resp-true {
     display: none !important; 
@@ -23,7 +24,7 @@
     height: 40px;
     line-height: 40px;
     margin-bottom: 20px;
-	  // Main Menu
+    position: relative;
 	  ul.main-menu {
 	    margin: 0;
 	    padding: 0;
@@ -61,6 +62,12 @@
             height: 40px;
             border: none;
           }
+	      }
+	      ul.subitems {
+	        position: absolute;
+	        left: 0;
+	        z-index: 100;
+	        background: white;
 	      }
 	    }
 	  }

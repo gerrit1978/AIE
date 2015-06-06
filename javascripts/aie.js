@@ -45,11 +45,18 @@ jQuery(document).ready(function($) {
     }, 500, 'easeOutCubic');
   });
   
-  // subitems on menu
+  // subitems on responsive menu
   $('.menu ul li').click(function(e) {
     if ($(this).children("ul.subitems").length) {
       $(this).toggleClass("expanded");
-      $(this).children("ul.subitems").toggle();
+      var width = $(window).width();
+      if (width >= 768) {
+        var menuwidth = $('nav.menu ul.items').css('width');
+        $(this).children("ul.subitems").css("width", menuwidth).toggle();
+      } else {
+        $(this).children("ul.subitems").toggle();      
+      }
     } 
   });
+  
 });

@@ -8637,40 +8637,42 @@ h3 {
 }
 
 /* Desktop and tablet */
-@media all and (min-width: 992px) {
-  /* line 4, ../sass/components/_desktop.scss */
+/*@media all and (min-width: 992px) { */
+@media all and (min-width: 768px) {
+  /* line 5, ../sass/components/_desktop.scss */
   .resp-true {
     display: none !important;
   }
 
-  /* line 7, ../sass/components/_desktop.scss */
+  /* line 8, ../sass/components/_desktop.scss */
   .resp-false {
     display: block;
   }
 
-  /* line 12, ../sass/components/_desktop.scss */
+  /* line 13, ../sass/components/_desktop.scss */
   section.header form.login {
     margin-top: 1em;
   }
-  /* line 15, ../sass/components/_desktop.scss */
+  /* line 16, ../sass/components/_desktop.scss */
   section.header form.login input.login {
     min-width: 16em;
   }
 
-  /* line 22, ../sass/components/_desktop.scss */
+  /* line 23, ../sass/components/_desktop.scss */
   nav.menu {
     height: 40px;
     line-height: 40px;
     margin-bottom: 20px;
+    position: relative;
   }
-  /* line 27, ../sass/components/_desktop.scss */
+  /* line 28, ../sass/components/_desktop.scss */
   nav.menu ul.main-menu {
     margin: 0;
     padding: 0;
     font-size: 1.143em;
     font-weight: 800;
   }
-  /* line 32, ../sass/components/_desktop.scss */
+  /* line 33, ../sass/components/_desktop.scss */
   nav.menu ul.main-menu li.item {
     margin: 0;
     padding: 0;
@@ -8681,20 +8683,20 @@ h3 {
     margin-right: 90px;
     color: #555555;
   }
-  /* line 41, ../sass/components/_desktop.scss */
+  /* line 42, ../sass/components/_desktop.scss */
   nav.menu ul.main-menu li.item.home {
     background: url(../images/sprite.png) no-repeat left top;
     width: 30px;
     text-indent: -999em;
   }
-  /* line 45, ../sass/components/_desktop.scss */
+  /* line 46, ../sass/components/_desktop.scss */
   nav.menu ul.main-menu li.item.home a {
     display: block;
     width: 30px;
     height: 40px;
     border: none;
   }
-  /* line 52, ../sass/components/_desktop.scss */
+  /* line 53, ../sass/components/_desktop.scss */
   nav.menu ul.main-menu li.item.search {
     background: url(../images/sprite.png) no-repeat right -37px;
     width: 32px;
@@ -8702,34 +8704,41 @@ h3 {
     text-indent: -999em;
     margin-right: 0;
   }
-  /* line 58, ../sass/components/_desktop.scss */
+  /* line 59, ../sass/components/_desktop.scss */
   nav.menu ul.main-menu li.item.search a {
     display: block;
     width: 32px;
     height: 40px;
     border: none;
   }
+  /* line 66, ../sass/components/_desktop.scss */
+  nav.menu ul.main-menu li.item ul.subitems {
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    background: white;
+  }
 
-  /* line 70, ../sass/components/_desktop.scss */
+  /* line 77, ../sass/components/_desktop.scss */
   section.news-slider .flexslider {
     max-width: 1280px;
   }
-  /* line 74, ../sass/components/_desktop.scss */
+  /* line 81, ../sass/components/_desktop.scss */
   section.news-slider .flexslider ul.slides li.slide .text {
     max-width: 1024px;
   }
-  /* line 79, ../sass/components/_desktop.scss */
+  /* line 86, ../sass/components/_desktop.scss */
   section.news-slider .flexslider ol.flex-control-paging {
     max-width: 1280px !important;
   }
 
-  /* line 87, ../sass/components/_desktop.scss */
+  /* line 94, ../sass/components/_desktop.scss */
   section.partners .flexslider-partners {
     padding-left: 100px;
     padding-right: 100px;
   }
 
-  /* line 98, ../sass/components/_desktop.scss */
+  /* line 105, ../sass/components/_desktop.scss */
   section.stay-informed {
     height: 60px;
     line-height: 60px;
@@ -8737,28 +8746,28 @@ h3 {
 }
 /* Desktop only */
 @media all and (min-width: 1023px) {
-  /* line 108, ../sass/components/_desktop.scss */
+  /* line 115, ../sass/components/_desktop.scss */
   .container {
     max-width: 1024px;
   }
 
-  /* line 112, ../sass/components/_desktop.scss */
+  /* line 119, ../sass/components/_desktop.scss */
   .container-large {
     max-width: 1280px;
     margin: 0 auto;
   }
-  /* line 115, ../sass/components/_desktop.scss */
+  /* line 122, ../sass/components/_desktop.scss */
   .container-large:after {
     content: " ";
     display: table;
     clear: both;
   }
-  /* line 120, ../sass/components/_desktop.scss */
+  /* line 127, ../sass/components/_desktop.scss */
   .container-large .row {
     clear: both;
     margin-bottom: 20px;
   }
-  /* line 124, ../sass/components/_desktop.scss */
+  /* line 131, ../sass/components/_desktop.scss */
   .container-large .col-md-4 {
     margin: 0;
     padding: 0;
@@ -8770,12 +8779,32 @@ h3 {
     max-width: 100%;
   }
 
+  /* Main Menu */
   /* line 10, ../sass/components/_tablet.scss */
   nav.menu ul.main-menu li.item {
     margin-right: 40px;
   }
+
+  /* Large Blocks */
+  /* line 18, ../sass/components/_tablet.scss */
+  section.large-blocks .clearfix {
+    float: none;
+    clear: none;
+  }
+  /* line 22, ../sass/components/_tablet.scss */
+  section.large-blocks .block {
+    width: 48%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    margin-right: 5px;
+  }
+  /* line 29, ../sass/components/_tablet.scss */
+  section.large-blocks .block .visual img {
+    width: 100% !important;
+  }
 }
-@media all and (min-width: 320px) and (max-width: 991px) {
+@media all and (min-width: 320px) and (max-width: 767px) {
   /* Fix menu issue */
   /* line 7, ../sass/components/_smartphone.scss */
   .main {

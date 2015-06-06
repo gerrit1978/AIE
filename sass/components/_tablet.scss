@@ -4,7 +4,7 @@
     max-width: 100%;
   }
 
-  // Main Menu
+  /* Main Menu */
 	nav.menu {
     ul.main-menu {
       li.item {
@@ -12,6 +12,26 @@
       }
     }
   }
+  
+  /* Large Blocks */
+  section.large-blocks {
+    .clearfix {
+      float: none;
+      clear: none;
+    }
+    .block {
+      width: 48%;
+      float: left;
+      padding: 0;
+      margin: 0;
+      margin-right: 5px;
+      .visual {
+        img {
+          width: 100% !important;
+        }
+      }
+    }
+  } 
 
 
 }
