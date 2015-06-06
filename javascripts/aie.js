@@ -39,6 +39,11 @@ jQuery(document).ready(function($) {
       }, 500, 'easeOutCubic');
     }
   });
+  $('section.menu .resp-close a').click(function(e) {
+    $('section.menu ul.items').animate({
+      left: "100%"
+    }, 500, 'easeOutCubic');
+  });
   
   // subitems on menu
   $('.menu ul li').click(function(e) {

@@ -8834,9 +8834,9 @@ h3 {
     color: white;
     margin: 0;
     padding: 0 1em;
-    padding-top: 15px;
+    padding-top: 45px;
   }
-  /* line 65, ../sass/components/_smartphone.scss */
+  /* line 64, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item {
     list-style: none;
     border-top: 1px solid #b4b4b4;
@@ -8844,46 +8844,62 @@ h3 {
     line-height: 35px;
     background: url(../images/sprite.png) no-repeat right -200px;
   }
-  /* line 71, ../sass/components/_smartphone.scss */
+  /* line 70, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item.expanded {
     background-position: right -233px;
   }
-  /* line 73, ../sass/components/_smartphone.scss */
+  /* line 72, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item.expanded a {
     color: #d8d4ce;
   }
-  /* line 77, ../sass/components/_smartphone.scss */
+  /* line 76, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item a {
     color: white;
     font-weight: 300;
     display: block;
   }
-  /* line 82, ../sass/components/_smartphone.scss */
+  /* line 81, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item ul.subitems {
     margin-left: 0;
     padding-left: 1em;
   }
-  /* line 85, ../sass/components/_smartphone.scss */
+  /* line 84, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item ul.subitems li.subitem {
     margin: 0;
     padding: 0;
   }
-  /* line 88, ../sass/components/_smartphone.scss */
+  /* line 87, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item ul.subitems li.subitem a {
     color: white;
   }
-  /* line 93, ../sass/components/_smartphone.scss */
+  /* line 92, ../sass/components/_smartphone.scss */
+  section.menu ul.items li.item.resp-close {
+    border: none;
+    background: none;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+  /* line 98, ../sass/components/_smartphone.scss */
+  section.menu ul.items li.item.resp-close a {
+    width: 27px;
+    height: 27px;
+    display: block;
+    text-indent: -999em;
+    background: url(../images/sprite.png) no-repeat right -84px;
+  }
+  /* line 106, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item.resp-search-menu {
     min-height: 35px;
     border-top: none;
   }
-  /* line 96, ../sass/components/_smartphone.scss */
+  /* line 109, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item.resp-search-menu form {
     padding-top: 3px;
     height: 25px;
     line-height: 25px;
   }
-  /* line 100, ../sass/components/_smartphone.scss */
+  /* line 113, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item.resp-search-menu form .form-text {
     padding: 3px;
     border-radius: 5px;
@@ -8893,7 +8909,7 @@ h3 {
     width: 80%;
     font-weight: 300;
   }
-  /* line 109, ../sass/components/_smartphone.scss */
+  /* line 122, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item.resp-search-menu form .form-submit {
     width: 34px;
     height: 33px;
@@ -8903,69 +8919,69 @@ h3 {
     cursor: pointer;
     float: right;
   }
-  /* line 120, ../sass/components/_smartphone.scss */
+  /* line 133, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item.resp-login {
     margin-bottom: 20px;
     border-bottom: 1px solid #b4b4b4;
   }
-  /* line 124, ../sass/components/_smartphone.scss */
+  /* line 137, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item.resp-footer-menu {
     background: none;
     padding-top: 15px;
     line-height: 1.2em !important;
   }
-  /* line 128, ../sass/components/_smartphone.scss */
+  /* line 141, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item.resp-footer-menu img {
     float: left;
   }
-  /* line 131, ../sass/components/_smartphone.scss */
+  /* line 144, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item.resp-footer-menu p, section.menu ul.items li.item.resp-footer-menu h2 {
     margin-left: 80px;
   }
-  /* line 135, ../sass/components/_smartphone.scss */
+  /* line 148, ../sass/components/_smartphone.scss */
   section.menu ul.items li.item.resp-footer-menu a:hover {
     border-bottom: 1px solid white;
   }
 
   /* News Slider */
-  /* line 145, ../sass/components/_smartphone.scss */
+  /* line 158, ../sass/components/_smartphone.scss */
   section.news-slider {
     margin-top: 20px;
   }
-  /* line 147, ../sass/components/_smartphone.scss */
+  /* line 160, ../sass/components/_smartphone.scss */
   section.news-slider ul.slides {
     margin: 0;
     padding: 0;
   }
-  /* line 151, ../sass/components/_smartphone.scss */
+  /* line 164, ../sass/components/_smartphone.scss */
   section.news-slider ul.slides li.slide .text {
     padding: 0 20px;
   }
 
   /* Facts */
-  /* line 164, ../sass/components/_smartphone.scss */
+  /* line 177, ../sass/components/_smartphone.scss */
   section.facts .fact {
     margin: 0 10px;
     margin-bottom: 10px;
   }
-  /* line 167, ../sass/components/_smartphone.scss */
+  /* line 180, ../sass/components/_smartphone.scss */
   section.facts .fact p {
     margin-left: 145px !important;
   }
 
   /* Partners */
-  /* line 175, ../sass/components/_smartphone.scss */
+  /* line 188, ../sass/components/_smartphone.scss */
   section.partners .container {
     margin-left: 10px;
     margin-right: 10px;
   }
 
   /* Stay Informed */
-  /* line 186, ../sass/components/_smartphone.scss */
+  /* line 199, ../sass/components/_smartphone.scss */
   section.stay-informed {
     padding: 2em 0;
   }
-  /* line 188, ../sass/components/_smartphone.scss */
+  /* line 201, ../sass/components/_smartphone.scss */
   section.stay-informed strong {
     font-size: 1.2em;
   }

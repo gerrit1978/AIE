@@ -50,8 +50,7 @@
     a {
       border: none !important;
     }
-    ul.items {
-    
+    ul.items {    
       position: fixed;
       top: 0;
       left: 100%;
@@ -61,7 +60,7 @@
       color: white;
       margin: 0;
       padding: 0 1em;
-      padding-top: 15px;
+      padding-top: 45px;
       li.item {
         list-style: none;
         border-top: 1px solid $greyDark;
@@ -88,6 +87,20 @@
             a {
               color: white;
             }
+          }
+        }
+        &.resp-close {
+          border: none;
+          background: none;
+          position: absolute;
+          right: 15px;
+          top: 10px;
+          a {
+            width: 27px;
+            height: 27px;
+            display: block;
+            text-indent: -999em;
+            background: url(../images/sprite.png) no-repeat right -84px;
           }
         }
         &.resp-search-menu {
