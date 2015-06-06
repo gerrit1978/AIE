@@ -58,6 +58,25 @@ section {
   }
 }
 
+/* Scroll to top */
+.scroll-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 999;
+  width: 39px;
+  height: 46px;
+  background: url(../images/sprite.png) no-repeat left -233px;
+  a {
+    display: block;
+    height: 46px;
+    text-indent: -999em;
+    cursor: pointer;
+    border: none;
+  }
+}
+
 
 /* Menu Section */
 nav.menu {

@@ -59,4 +59,19 @@ jQuery(document).ready(function($) {
     } 
   });
   
+  // toggle scroll to top button
+  $(window).scroll(function() {
+    var offset = $(document).scrollTop();
+    if (offset > 250) {
+			$('.scroll-top').fadeIn();
+		} else {
+			$('.scroll-top').fadeOut();
+		}
+  });  
+  
+  // scroll to top
+  $('.scroll-top').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});  
 });
