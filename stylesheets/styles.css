@@ -8776,11 +8776,13 @@ h3 {
   }
 }
 @media all and (min-width: 320px) and (max-width: 991px) {
+  /* Fix menu issue */
   /* line 7, ../sass/components/_smartphone.scss */
   .main {
     overflow-x: hidden !important;
   }
 
+  /* General */
   /* line 12, ../sass/components/_smartphone.scss */
   .resp-true {
     display: block;
@@ -8974,30 +8976,36 @@ h3 {
     padding: 0 20px;
   }
 
+  /* Large Blocks */
+  /* line 184, ../sass/components/_smartphone.scss */
+  section.large-blocks .block .visual img {
+    width: 100%;
+  }
+
   /* Facts */
-  /* line 182, ../sass/components/_smartphone.scss */
+  /* line 193, ../sass/components/_smartphone.scss */
   section.facts .fact {
     margin: 0 10px;
     margin-bottom: 10px;
   }
-  /* line 185, ../sass/components/_smartphone.scss */
+  /* line 196, ../sass/components/_smartphone.scss */
   section.facts .fact p {
     margin-left: 145px !important;
   }
 
   /* Partners */
-  /* line 193, ../sass/components/_smartphone.scss */
+  /* line 204, ../sass/components/_smartphone.scss */
   section.partners .container {
     margin-left: 10px;
     margin-right: 10px;
   }
 
   /* Stay Informed */
-  /* line 204, ../sass/components/_smartphone.scss */
+  /* line 215, ../sass/components/_smartphone.scss */
   section.stay-informed {
     padding: 2em 0;
   }
-  /* line 206, ../sass/components/_smartphone.scss */
+  /* line 217, ../sass/components/_smartphone.scss */
   section.stay-informed strong {
     font-size: 1.2em;
   }
