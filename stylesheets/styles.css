@@ -8764,6 +8764,17 @@ h3 {
     padding: 0;
   }
 }
+@media all and (min-width: 641px) and (max-width: 1024px) {
+  /* line 3, ../sass/components/_tablet.scss */
+  img {
+    max-width: 100%;
+  }
+
+  /* line 10, ../sass/components/_tablet.scss */
+  section.menu ul.main-menu li.item {
+    margin-right: 40px;
+  }
+}
 @media all and (min-width: 320px) and (max-width: 991px) {
   /* line 7, ../sass/components/_smartphone.scss */
   .resp-true {
