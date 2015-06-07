@@ -11,6 +11,17 @@ a {
     color: $textGreyDarkHover;
     border-bottom: 1px solid $textGreyDarkHover;
   }
+  &.more {
+    background: white;
+    border: 1px solid $textGreyDark;
+    border-radius: 5px;
+    padding: 5px 20px;
+    &:hover {
+      background: $textGreyDarkHover;
+      color: white;
+    }
+  }
+  
 }
 
 h2 {

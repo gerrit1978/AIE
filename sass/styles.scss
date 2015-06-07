@@ -110,12 +110,6 @@ section.news-slider {
 	        padding-bottom: 20px;
 	        margin: 0 auto;
 	        text-align: center;
-	        a.more {
-	          background: white;
-	          border: 1px solid $textGreyDark;
-	          border-radius: 5px;
-	          padding: 5px 20px;
-	        }
 	      }
 	    }
 	  }
@@ -284,7 +278,10 @@ section.partners {
 	    li.slide {
 	      margin: 0;
 	      padding: 0;
-	      text-align: center;
+	      img {
+	        text-align: center;
+	        width: 50%;
+	      }
 	    }
 	  }
 	  ul.flex-direction-nav {
@@ -306,6 +303,7 @@ section.partners {
 	        display: block;
 	        height: 87px;
 	        cursor: pointer;
+	        border: none;
 	      }
 	    }
 	  }

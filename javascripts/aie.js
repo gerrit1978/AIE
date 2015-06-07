@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
 
   // slider for carousel
   $('.flexslider').flexslider({
-    slideshowSpeed: 3000,
+    slideshowSpeed: 5000,
     directionNav: false
   });
   
@@ -11,8 +11,10 @@ jQuery(document).ready(function($) {
   if (width < 400) {
     var newWidth = width * 0.95;
   } else {
-    if (width > 1024) {
-      var newWidth = 160;
+    if (width < 1025) {
+      var newWidth = (width * 0.8) / 4;
+    } else {
+      var newWidth = 200;    
     }
   }
   $('.flexslider-partners').flexslider({
