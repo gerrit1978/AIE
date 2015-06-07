@@ -8613,23 +8613,38 @@ h3 {
   text-transform: uppercase;
 }
 
+/* line 41, ../sass/components/_elements.scss */
+h4 {
+  font-size: 1.072em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+/* line 45, ../sass/components/_elements.scss */
+h4.orange {
+  color: #cb7d29;
+}
+/* line 48, ../sass/components/_elements.scss */
+h4.blue {
+  color: #558399;
+}
+
 /* Form elements */
-/* line 44, ../sass/components/_elements.scss */
+/* line 55, ../sass/components/_elements.scss */
 .form-item.form-item-inline {
   display: inline-block;
 }
-/* line 48, ../sass/components/_elements.scss */
+/* line 59, ../sass/components/_elements.scss */
 .form-item label {
   font-weight: normal;
   margin-right: .5em;
 }
-/* line 54, ../sass/components/_elements.scss */
+/* line 65, ../sass/components/_elements.scss */
 .form-item input.form-text {
   border: 1px solid #555555;
   border-radius: 3px;
   padding: 2px 6px 3px 6px;
 }
-/* line 59, ../sass/components/_elements.scss */
+/* line 70, ../sass/components/_elements.scss */
 .form-item input.form-submit {
   background: #555555;
   border: none;
@@ -8639,11 +8654,11 @@ h3 {
 }
 
 /* Lists */
-/* line 71, ../sass/components/_elements.scss */
+/* line 82, ../sass/components/_elements.scss */
 .menu ul {
   list-style: none;
 }
-/* line 73, ../sass/components/_elements.scss */
+/* line 84, ../sass/components/_elements.scss */
 .menu ul li {
   list-style: none;
 }
@@ -9292,13 +9307,19 @@ section.large-blocks .block.purple .title {
   background: #ac9fc4;
 }
 
+/* Main Content Section */
+/* line 232, ../sass/styles.scss */
+section.main ul li {
+  margin-bottom: 20px;
+}
+
 /* Facts Section */
-/* line 231, ../sass/styles.scss */
+/* line 240, ../sass/styles.scss */
 section.facts .fact {
   height: 140px;
   padding-left: 150px;
 }
-/* line 234, ../sass/styles.scss */
+/* line 243, ../sass/styles.scss */
 section.facts .fact p {
   min-width: 150px;
   height: 140px;
@@ -9308,31 +9329,31 @@ section.facts .fact p {
   vertical-align: middle;
   display: table-cell;
 }
-/* line 243, ../sass/styles.scss */
+/* line 252, ../sass/styles.scss */
 section.facts .fact.people {
   background: url(../images/facts/people.jpg) no-repeat;
 }
-/* line 244, ../sass/styles.scss */
+/* line 253, ../sass/styles.scss */
 section.facts .fact.people p {
   border-top: 5px solid #a2bc6b;
   border-bottom: 5px solid #a2bc6b;
   color: #a2bc6b;
 }
-/* line 251, ../sass/styles.scss */
+/* line 260, ../sass/styles.scss */
 section.facts .fact.companies {
   background: url(../images/facts/companies.jpg) no-repeat;
 }
-/* line 252, ../sass/styles.scss */
+/* line 261, ../sass/styles.scss */
 section.facts .fact.companies p {
   border-top: 5px solid #eebe2c;
   border-bottom: 5px solid #eebe2c;
   color: #eebe2c;
 }
-/* line 259, ../sass/styles.scss */
+/* line 268, ../sass/styles.scss */
 section.facts .fact.countries {
   background: url(../images/facts/countries.jpg) no-repeat;
 }
-/* line 261, ../sass/styles.scss */
+/* line 270, ../sass/styles.scss */
 section.facts .fact.countries p {
   border-top: 5px solid #548399;
   border-bottom: 5px solid #548399;
@@ -9340,28 +9361,28 @@ section.facts .fact.countries p {
 }
 
 /* Partners Section */
-/* line 272, ../sass/styles.scss */
+/* line 281, ../sass/styles.scss */
 section.partners .flexslider-partners {
   position: relative;
   margin-bottom: 20px;
 }
-/* line 275, ../sass/styles.scss */
+/* line 284, ../sass/styles.scss */
 section.partners .flexslider-partners ul.slides {
   margin: 0;
   padding: 0;
 }
-/* line 278, ../sass/styles.scss */
+/* line 287, ../sass/styles.scss */
 section.partners .flexslider-partners ul.slides li.slide {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 282, ../sass/styles.scss */
+/* line 291, ../sass/styles.scss */
 section.partners .flexslider-partners ul.slides li.slide img {
   text-align: center;
   width: 50%;
 }
-/* line 289, ../sass/styles.scss */
+/* line 298, ../sass/styles.scss */
 section.partners .flexslider-partners ul.flex-direction-nav li {
   position: absolute;
   top: 10%;
@@ -9370,16 +9391,16 @@ section.partners .flexslider-partners ul.flex-direction-nav li {
   background: url(../images/sprite.png) no-repeat left -140px;
   text-indent: -999em;
 }
-/* line 296, ../sass/styles.scss */
+/* line 305, ../sass/styles.scss */
 section.partners .flexslider-partners ul.flex-direction-nav li.flex-nav-prev {
   left: 10px;
 }
-/* line 299, ../sass/styles.scss */
+/* line 308, ../sass/styles.scss */
 section.partners .flexslider-partners ul.flex-direction-nav li.flex-nav-next {
   right: 10px;
   background-position: -19px -140px;
 }
-/* line 303, ../sass/styles.scss */
+/* line 312, ../sass/styles.scss */
 section.partners .flexslider-partners ul.flex-direction-nav li a {
   display: block;
   height: 87px;
@@ -9388,34 +9409,34 @@ section.partners .flexslider-partners ul.flex-direction-nav li a {
 }
 
 /* Stay Informed Section */
-/* line 316, ../sass/styles.scss */
+/* line 325, ../sass/styles.scss */
 section.stay-informed form {
   text-align: right;
 }
-/* line 317, ../sass/styles.scss */
+/* line 326, ../sass/styles.scss */
 section.stay-informed form ::-webkit-input-placeholder {
   color: white;
 }
-/* line 320, ../sass/styles.scss */
+/* line 329, ../sass/styles.scss */
 section.stay-informed form :-moz-placeholder {
   /* older Firefox*/
   color: white;
 }
-/* line 323, ../sass/styles.scss */
+/* line 332, ../sass/styles.scss */
 section.stay-informed form ::-moz-placeholder {
   /* Firefox 19+ */
   color: white;
 }
-/* line 326, ../sass/styles.scss */
+/* line 335, ../sass/styles.scss */
 section.stay-informed form :-ms-input-placeholder {
   color: white;
 }
-/* line 330, ../sass/styles.scss */
+/* line 339, ../sass/styles.scss */
 section.stay-informed form .form-text, section.stay-informed form .form-email, section.stay-informed form .form-submit {
   height: 30px;
   line-height: 30px;
 }
-/* line 334, ../sass/styles.scss */
+/* line 343, ../sass/styles.scss */
 section.stay-informed form .form-email {
   border: 1px solid white;
   border-radius: 5px;
@@ -9427,7 +9448,7 @@ section.stay-informed form .form-email {
   padding: 0 10px;
   min-width: 75%;
 }
-/* line 345, ../sass/styles.scss */
+/* line 354, ../sass/styles.scss */
 section.stay-informed form .form-submit {
   background: white;
   color: #0896d6;

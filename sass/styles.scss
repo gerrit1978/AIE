@@ -226,6 +226,15 @@ section.large-blocks {
   }
 }
 
+/* Main Content Section */
+section.main {
+  ul {
+    li {
+      margin-bottom: 20px;
+    }
+  }
+}
+
 /* Facts Section */
 section.facts {
   .fact {
