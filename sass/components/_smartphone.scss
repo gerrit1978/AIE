@@ -161,7 +161,7 @@
 
   /* News Slider */
 	section.news-slider {
-	  margin-top: 20px;
+	  margin-top: 10px;
 	  ul.slides {
 	    margin: 0;
 	    padding: 0;
@@ -196,6 +196,13 @@
       p {
         margin-left: 145px !important;
       }
+    }
+  }
+
+  /* Main Content Section (subpages) */
+  section.main {
+    .container {
+      margin: 0 10px;
     }
   }
 

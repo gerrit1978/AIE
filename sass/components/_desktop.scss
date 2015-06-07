@@ -23,7 +23,6 @@
 	nav.menu {
     height: 40px;
     line-height: 40px;
-    margin-bottom: 20px;
     position: relative;
 	  ul.main-menu {
 	    margin: 0;
@@ -39,6 +38,11 @@
 	      line-height: 40px;
 	      margin-right: 90px;
         color: $textGreyDark;
+        a {
+          &.active {
+            color: black;
+          }
+        }
 	      &.home {
 	        background: url(../images/sprite.png) no-repeat left top;
 	        width: 30px;
@@ -74,6 +78,7 @@
 	}
 	
 	section.news-slider {
+	  margin-top: 10px;
 	  .flexslider {
 	    max-width: 1280px;
 		  ul.slides {
