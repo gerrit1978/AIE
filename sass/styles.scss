@@ -144,6 +144,17 @@ section.news-slider {
 	}
 }
 
+/* Visual Info Section */
+section.visual-info {
+  margin-top: 10px;
+  .text {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background: $greyLight;
+    text-align: center;
+  }
+}
+
 /* Blocks Section */
 section.large-blocks {
   .block {
