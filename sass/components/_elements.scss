@@ -3,6 +3,13 @@ body{
   background: white;
 }
 
+.orange {
+  color: $textOrange;
+}
+.blue {
+  color: $textBlue;
+}
+
 a {
   color: $textGreyDark;
   text-decoration: none;
@@ -42,12 +49,6 @@ h4 {
   font-size: 1.072em;
   font-weight: 800;
   text-transform: uppercase;
-  &.orange {
-    color: $textOrange;
-  }
-  &.blue {
-    color: $textBlue;
-  }
 }
 
 /* Form elements */
