@@ -9,6 +9,11 @@
     display: block;
   }
 
+  .breadcrumb {
+    margin: 0;
+    padding: 0;
+  }
+
   section.header {
     form.login {
       margin-top: 1em;
@@ -111,6 +116,12 @@
     height: 60px;
     line-height: 60px;
 	}
+
+  section.main {
+    .indent {
+      margin-left: 3em !important;
+    }
+  }
 
 }
 
