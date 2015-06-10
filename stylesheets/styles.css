@@ -8834,26 +8834,30 @@ h4 {
   }
 
   /* Large Blocks */
-  /* line 18, ../sass/components/_tablet.scss */
+  /* line 17, ../sass/components/_tablet.scss */
+  section.large-blocks {
+    margin-left: 1%;
+  }
+  /* line 19, ../sass/components/_tablet.scss */
   section.large-blocks .clearfix {
     float: none;
     clear: none;
   }
-  /* line 22, ../sass/components/_tablet.scss */
+  /* line 23, ../sass/components/_tablet.scss */
   section.large-blocks .block {
-    width: 48%;
+    width: 49%;
     float: left;
     padding: 0;
     margin: 0;
     margin-right: 5px;
   }
-  /* line 29, ../sass/components/_tablet.scss */
+  /* line 30, ../sass/components/_tablet.scss */
   section.large-blocks .block .visual img {
     width: 100% !important;
   }
 
   /* Partners */
-  /* line 38, ../sass/components/_tablet.scss */
+  /* line 39, ../sass/components/_tablet.scss */
   section.partners .flexslider-partners {
     padding: 0 40px;
   }
