@@ -262,6 +262,25 @@ section.main {
   .indent {
     margin-left: 1em;
   }
+  
+  /* Publications */
+  ul.publications {
+    clear: left;
+    margin: 0;
+    padding: 0;
+    li.publication {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      .visual {
+        img {
+	        float: left;
+	        margin-right: 3em;
+	        max-width: 100%;
+        }
+      }
+    }
+  }
 }
 
 /* Facts Section */
