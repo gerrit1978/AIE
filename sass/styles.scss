@@ -109,6 +109,11 @@ section.news-slider {
 	        margin: 0 auto;
 	        text-align: center;
 	      }
+	      .visual {
+	        img {
+	          max-width: 100%;
+	        }
+	      }
 	    }
 	  }
 	  ol.flex-control-paging {
@@ -151,6 +156,12 @@ section.visual-info {
     background: $greyLight;
     text-align: center;
   }
+  .visual {
+    img {
+      max-width: 100%;
+    }
+  }
+  
 }
 
 /* Blocks Section */
@@ -177,6 +188,11 @@ section.large-blocks {
       padding: 10px 0;
       text-align: center;
       font-size: 1.286em;
+    }
+    .visual {
+      img {
+        max-width: 100%;
+      }
     }
     &.green {
       .description {

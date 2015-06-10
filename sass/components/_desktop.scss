@@ -150,3 +150,19 @@
     }
   }
 }
+
+
+/* Desktop between 1024 and 1280 px */
+@media all and (min-width: 1024px) and (max-width: 1279px) {
+
+  /* main menu fix */
+	nav.menu {
+	  ul.main-menu {
+	    li.item {
+	      margin-right: 80px;
+	    }
+	  }
+	}
+	
+
+}
