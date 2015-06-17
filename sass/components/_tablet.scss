@@ -8,7 +8,18 @@
 	nav.menu {
     ul.main-menu {
       li.item {
-        margin-right: 40px;
+        margin-right: 20px;
+      }
+    }
+  }
+  
+  .loggedin {
+    nav.menu {
+      ul.main-menu {
+        li.item {
+          margin-right: 5px;
+          font-size: 0.9em;
+        }
       }
     }
   }

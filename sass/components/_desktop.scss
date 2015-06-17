@@ -25,6 +25,16 @@
     }
   }
 
+  .loggedin {
+    nav.menu {
+      ul.main-menu {
+        li.item {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
 	nav.menu {
     height: 40px;
     line-height: 40px;
