@@ -410,3 +410,26 @@ section.stay-informed {
   }
 }
 
+/* Tables */
+.table {
+  .table-row {
+    border-bottom: 1px solid $greyLight;
+    padding: 10px 0;
+    clear: left;
+    .table-cell {
+      &.left {
+        width: 80%;
+        float: left;
+      }
+      &.center {
+        width: 10%;
+        float: left;
+      }
+      &.right {
+        width: 10%;
+        float: left;
+      }
+    }
+    
+  }
+}

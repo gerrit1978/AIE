@@ -8575,7 +8575,7 @@ body {
 
 /* line 6, ../sass/components/_elements.scss */
 .orange {
-  color: #cb7d29;
+  color: #cd7c1c;
 }
 
 /* line 9, ../sass/components/_elements.scss */
@@ -9549,4 +9549,27 @@ section.stay-informed form .form-submit {
   border: none;
   padding: 0 10px;
   text-transform: uppercase;
+}
+
+/* Tables */
+/* line 415, ../sass/styles.scss */
+.table .table-row {
+  border-bottom: 1px solid #d8d4ce;
+  padding: 10px 0;
+  clear: left;
+}
+/* line 420, ../sass/styles.scss */
+.table .table-row .table-cell.left {
+  width: 80%;
+  float: left;
+}
+/* line 424, ../sass/styles.scss */
+.table .table-row .table-cell.center {
+  width: 10%;
+  float: left;
+}
+/* line 428, ../sass/styles.scss */
+.table .table-row .table-cell.right {
+  width: 10%;
+  float: left;
 }
