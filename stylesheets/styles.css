@@ -8758,47 +8758,48 @@ h4 {
   /* line 85, ../sass/components/_desktop.scss */
   nav.menu ul.main-menu li.item ul.subitems {
     position: absolute;
-    left: 0;
+    left: -143px;
+    margin-top: 10px;
     z-index: 100;
-    background: white;
+    background: #d8d4ce;
   }
 
-  /* line 95, ../sass/components/_desktop.scss */
+  /* line 96, ../sass/components/_desktop.scss */
   section.news-slider {
     margin-top: 10px;
   }
-  /* line 97, ../sass/components/_desktop.scss */
+  /* line 98, ../sass/components/_desktop.scss */
   section.news-slider .flexslider {
     max-width: 1280px;
   }
-  /* line 101, ../sass/components/_desktop.scss */
+  /* line 102, ../sass/components/_desktop.scss */
   section.news-slider .flexslider ul.slides li.slide .text {
     max-width: 1024px;
   }
-  /* line 106, ../sass/components/_desktop.scss */
+  /* line 107, ../sass/components/_desktop.scss */
   section.news-slider .flexslider ol.flex-control-paging {
     max-width: 1280px !important;
   }
 
-  /* line 114, ../sass/components/_desktop.scss */
+  /* line 115, ../sass/components/_desktop.scss */
   section.partners .flexslider-partners {
     padding-left: 100px;
     padding-right: 100px;
   }
 
-  /* line 125, ../sass/components/_desktop.scss */
+  /* line 126, ../sass/components/_desktop.scss */
   section.stay-informed {
     height: 60px;
     line-height: 60px;
   }
 
-  /* line 131, ../sass/components/_desktop.scss */
+  /* line 132, ../sass/components/_desktop.scss */
   section.main .indent {
     margin-left: 3em !important;
   }
 
   /* Contact link */
-  /* line 139, ../sass/components/_desktop.scss */
+  /* line 140, ../sass/components/_desktop.scss */
   .search .contact a {
     background: url(../images/sprite.png) no-repeat left -354px;
     display: block;
@@ -8810,28 +8811,28 @@ h4 {
 }
 /* Desktop only */
 @media all and (min-width: 1023px) {
-  /* line 155, ../sass/components/_desktop.scss */
+  /* line 156, ../sass/components/_desktop.scss */
   .container {
     max-width: 1024px;
   }
 
-  /* line 159, ../sass/components/_desktop.scss */
+  /* line 160, ../sass/components/_desktop.scss */
   .container-large {
     max-width: 1280px;
     margin: 0 auto;
   }
-  /* line 162, ../sass/components/_desktop.scss */
+  /* line 163, ../sass/components/_desktop.scss */
   .container-large:after {
     content: " ";
     display: table;
     clear: both;
   }
-  /* line 167, ../sass/components/_desktop.scss */
+  /* line 168, ../sass/components/_desktop.scss */
   .container-large .row {
     clear: both;
     margin-bottom: 20px;
   }
-  /* line 171, ../sass/components/_desktop.scss */
+  /* line 172, ../sass/components/_desktop.scss */
   .container-large .col-md-4 {
     margin: 0;
     padding: 0;
@@ -8840,7 +8841,7 @@ h4 {
 /* Desktop between 1024 and 1280 px */
 @media all and (min-width: 1024px) and (max-width: 1279px) {
   /* main menu fix */
-  /* line 185, ../sass/components/_desktop.scss */
+  /* line 186, ../sass/components/_desktop.scss */
   nav.menu ul.main-menu li.item {
     margin-right: 80px;
   }

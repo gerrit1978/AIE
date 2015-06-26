@@ -53,7 +53,12 @@ jQuery(document).ready(function($) {
       $(this).toggleClass("expanded");
       var width = $(window).width();
       if (width >= 768) {
+        var menuwidth = $('.container-large').css('width');
+/*
+        alert(menuwidth);
+        
         var menuwidth = $('nav.menu ul.items').css('width');
+*/
         $(this).children("ul.subitems").css("width", menuwidth).toggle();
       } else {
         $(this).children("ul.subitems").toggle();      

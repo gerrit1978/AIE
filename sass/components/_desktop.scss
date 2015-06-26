@@ -84,9 +84,10 @@
 	      }
 	      ul.subitems {
 	        position: absolute;
-	        left: 0;
+	        left: -143px;
+	        margin-top: 10px;
 	        z-index: 100;
-	        background: white;
+	        background: $greyLight;
 	      }
 	    }
 	  }
