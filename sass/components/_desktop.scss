@@ -132,6 +132,18 @@
       margin-left: 3em !important;
     }
   }
+  
+  /* Contact link */
+  .search {
+    .contact {
+      a {
+        background: url(../images/sprite.png) no-repeat left top;
+        display: block;
+        text-indent: -999em;
+        border: none;
+      }
+    }
+  }
 
 }
 

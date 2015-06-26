@@ -8796,31 +8796,40 @@ h4 {
   section.main .indent {
     margin-left: 3em !important;
   }
+
+  /* Contact link */
+  /* line 139, ../sass/components/_desktop.scss */
+  .search .contact a {
+    background: url(../images/sprite.png) no-repeat left top;
+    display: block;
+    text-indent: -999em;
+    border: none;
+  }
 }
 /* Desktop only */
 @media all and (min-width: 1023px) {
-  /* line 141, ../sass/components/_desktop.scss */
+  /* line 153, ../sass/components/_desktop.scss */
   .container {
     max-width: 1024px;
   }
 
-  /* line 145, ../sass/components/_desktop.scss */
+  /* line 157, ../sass/components/_desktop.scss */
   .container-large {
     max-width: 1280px;
     margin: 0 auto;
   }
-  /* line 148, ../sass/components/_desktop.scss */
+  /* line 160, ../sass/components/_desktop.scss */
   .container-large:after {
     content: " ";
     display: table;
     clear: both;
   }
-  /* line 153, ../sass/components/_desktop.scss */
+  /* line 165, ../sass/components/_desktop.scss */
   .container-large .row {
     clear: both;
     margin-bottom: 20px;
   }
-  /* line 157, ../sass/components/_desktop.scss */
+  /* line 169, ../sass/components/_desktop.scss */
   .container-large .col-md-4 {
     margin: 0;
     padding: 0;
@@ -8829,7 +8838,7 @@ h4 {
 /* Desktop between 1024 and 1280 px */
 @media all and (min-width: 1024px) and (max-width: 1279px) {
   /* main menu fix */
-  /* line 171, ../sass/components/_desktop.scss */
+  /* line 183, ../sass/components/_desktop.scss */
   nav.menu ul.main-menu li.item {
     margin-right: 80px;
   }
