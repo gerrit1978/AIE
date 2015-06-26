@@ -29,7 +29,7 @@
     nav.menu {
       ul.main-menu {
         li.item {
-          margin-right: 20px;
+          margin-right: 40px;
         }
       }
     }
@@ -137,10 +137,12 @@
   .search {
     .contact {
       a {
-        background: url(../images/sprite.png) no-repeat left top;
+        background: url(../images/sprite.png) no-repeat left -354px;
         display: block;
         text-indent: -999em;
         border: none;
+        width: 30px;
+        height: 20px;
       }
     }
   }
