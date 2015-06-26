@@ -433,3 +433,41 @@ section.stay-informed {
     
   }
 }
+
+/* Download icons */
+ul.download {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin-right: 1em;
+    a {
+      display: block;
+      background: url(../images/sprite.png) no-repeat;
+      width: 40px;
+      height: 40px;
+      text-indent: -999em;
+      &:hover {
+        border: none;
+      }
+    }
+    &.pdf {
+      a {
+        background-position: left -298px;
+      }
+    }
+    &.excel {
+      a {
+        background-position: -40px -298px;
+      }
+    }
+    &.word {
+      a {
+        background-position: -80px -298px;
+      }
+    }
+  }
+}
