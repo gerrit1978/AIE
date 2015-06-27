@@ -82,14 +82,43 @@
             border: none;
           }
 	      }
-	      ul.subitems {
-	        position: absolute;
-	        left: -143px;
-	        margin-top: 10px;
-	        z-index: 100;
-	        background: $greyLight;
-	      }
 	    }
+	  }
+	}
+	
+	section.submenus {
+	  position: relative;
+	  .inner {
+	    position: absolute;
+	    top: 10px;
+	    z-index: 10000;
+	    width: 100%;
+	    max-width: 1280px;
+      background: $greyLight;
+		  .submenu {
+		    display: none;
+		    padding: 2em 0;
+		    max-width: 1024px;
+		    margin: 0 auto;
+		    font-size: 1.3em;
+		    ul.subitems {
+		      margin: 0;
+		      padding: 0;
+		      li.subitem {
+		        list-style: none;
+		        margin: 0;
+		        padding: 0;
+		        margin-bottom: 10px;
+		      }
+		    }
+		    .column {
+		      border-right: 1px solid white;
+		      padding: 0 2em;
+		      &.last {
+		        border-right: none;
+		      }
+		    }
+		  }
 	  }
 	}
 	

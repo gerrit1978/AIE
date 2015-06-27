@@ -47,24 +47,33 @@ jQuery(document).ready(function($) {
     }, 500, 'easeOutCubic');
   });
   
-  // subitems on responsive menu
+  // subitems
   $('.menu ul li').click(function(e) {
     if ($(this).children("ul.subitems").length) {
       $(this).toggleClass("expanded");
       var width = $(window).width();
-      if (width >= 768) {
-        var menuwidth = $('.container-large').css('width');
-/*
-        alert(menuwidth);
-        
-        var menuwidth = $('nav.menu ul.items').css('width');
-*/
-        $(this).children("ul.subitems").css("width", menuwidth).toggle();
+      if (width < 768) {
+        $(this).children("ul.subitems").toggle();
       } else {
-        $(this).children("ul.subitems").toggle();      
-      }
+        var item = $(this).find("a").data("item");
+        var selector = "section.submenus .submenu." + item;
+        $(selector).toggle();
+        $(this).find("a").toggleClass("active");
+        // make columns equally height
+        var highestDiv = 0;
+        $(selector).children('.column').each(function() {
+          if ($(this).height() > highestDiv) {
+            highestDiv = $(this).height();
+          }
+        });        
+        var columnSelector = selector + " .column";
+        $(columnSelector).height(highestDiv);
+       }
     } 
   });
+  
+  // make subitem columns equally height
+  
   
   // toggle scroll to top button
   $(window).scroll(function() {
