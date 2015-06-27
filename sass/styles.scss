@@ -336,20 +336,38 @@ section.partners {
 	      margin: 0;
 	      padding: 0;
 	      text-align: center;
+	      list-style: none;
+	      a {
+	        border: none;
+	      }
 	      img {
 	        text-align: center;
 	        width: 50%;
-	      }
+			    filter: grayscale(1);
+		      -webkit-filter: grayscale(1);
+		      -moz-filter: grayscale(1);
+		      -ms-filter: grayscale(1);
+		      -o-filter: grayscale(1);	      
+			    &:hover {
+				    filter: grayscale(0);
+			      -webkit-filter: grayscale(0);
+			      -moz-filter: grayscale(0);
+			      -ms-filter: grayscale(0);
+			      -o-filter: grayscale(0);	      
+			    }
+			  }
 	    }
 	  }
 	  ul.flex-direction-nav {
 	    li {
+	      list-style: none;
 	      position: absolute;
 	      top: 10%;
 	      width: 19px;
 	      height: 87px;
 	      background: url(../images/sprite.png) no-repeat left -140px;
 	      text-indent: -999em;
+	      overflow: hidden;
 	      &.flex-nav-prev {
 	        left: 10px;
 	      }
