@@ -29,7 +29,7 @@
     nav.menu {
       ul.main-menu {
         li.item {
-          margin-right: 40px;
+          margin-right: 30px;
         }
       }
     }
@@ -81,6 +81,13 @@
             height: 40px;
             border: none;
           }
+	      }
+	      &.member {
+	        background: url(../images/sprite.png) no-repeat -31px top;
+	        width: 39px;
+	        height: 40px;
+	        text-indent: -999em;
+	        margin-right: 0;
 	      }
 	    }
 	  }

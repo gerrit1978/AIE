@@ -55,7 +55,20 @@ jQuery(document).ready(function($) {
       if (width < 768) {
         $(this).children("ul.subitems").toggle();
       } else {
+        // find the link that was clicked
         var item = $(this).find("a").data("item");
+        
+        // find the submenu that is currently opened
+        var currentlyVisible = $("section.submenus .submenu:visible");
+        var dataTarget = currentlyVisible.data("target");
+        if (dataTarget !== undefined && dataTarget !== null) {
+	        if (item != dataTarget) {
+	          currentlyVisible.hide();
+            $('.menu ul li a').removeClass('active');
+	        } 
+        }
+        
+        // toggle the submenu itself
         var selector = "section.submenus .submenu." + item;
         $(selector).toggle();
         $(this).find("a").toggleClass("active");
@@ -71,8 +84,6 @@ jQuery(document).ready(function($) {
        }
     } 
   });
-  
-  // make subitem columns equally height
   
   
   // toggle scroll to top button

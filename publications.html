@@ -47,18 +47,26 @@
       <li class="item resp-true resp-close"><a href="#">Close</a></li>
       <li class="item resp-true resp-search-menu"><form class="search" method="post" action="#"><input type="text" class="form-text" placeholder="Search" /><input type="submit" class="form-submit" /></form></li>
       <li class="item resp-true resp-login"><a href="#">Member Login</a></li>
+      <li class="item resp-false member">MEMBER ZONE</li>
       <li class="item home"><a href="home.html">Home</a></li>
       <li class="item"><a href="about.html">About AIE</a></li>
       <li class="item"><a class="active" href="publications.html">Publications</a></li>
       <li class="item">
-        <a href="#">Events</a>
+        <a href="#" data-item="events">Events</a>
         <ul class="subitems">
           <li class="subitem"><a href="http://deredactie.be">Council 2015</a></li>
           <li class="subitem"><a href="#">AIE-Euroskills Platform</a></li>
           <li class="subitem"><a href="events.html">Other European Events</a></li>
         </ul>
       </li>
-      <li class="item"><a href="#">Links</a></li>
+      <li class="item">
+        <a href="#" data-item="links">Links</a>
+        <ul class="subitems">
+          <li class="subitem"><a href="#">Link 1</a></li>
+          <li class="subitem"><a href="#">Link 2</a></li>
+          <li class="subitem"><a href="#">Link 3</a></li>
+        </ul>
+      </li>
       <li class="item resp-true"><a href="#">Contact</a></li>
       <li class="item"><a href="#">Extra Link 1</a></li>
       <li class="item"><a href="#">Extra Link 2</a></li>
@@ -75,6 +83,40 @@
    </div>
  </div>
 </nav>
+
+<section class="submenus">
+  <div class="container-large">
+    <div class="inner">
+	    <div class="submenu clearfix events" data-target="events">
+	      <div class="col-md-4 column links">
+	        <ul class="subitems">
+	          <li class="subitem"><a href="http://deredactie.be">Council 2015</a></li>
+	          <li class="subitem"><a href="#">AIE-Euroskills Platform</a></li>
+	          <li class="subitem"><a href="events.html">Other European Events</a></li>
+	        </ul>
+	      </div>
+	      <div class="col-md-4 column">Tweede kolom</div>
+	      <div class="col-md-4 column last"><img src="images/logo-resp-menu.png" /></div>
+	    </div>
+	    
+	    <div class="submenu clearfix links" data-target="links">
+	      <div class="col-md-8 column">
+	        <ul class="subitems">
+	          <li class="subitem"><a href="#">Subitem 1</a>
+	            <ul class="subsubitems">
+	              <li class="subsubitem"><a href="#">SubSubItem 1</a></li>
+	              <li class="subsubitem"><a href="#">SubSubItem 2</a></li>
+	            </ul>
+	          </li>
+	          <li class="subitem"><a href="#">AIE-Euroskills Platform</a></li>
+	          <li class="subitem"><a href="events.html">Other European Events</a></li>
+	        </ul>
+	      </div>
+	      <div class="col-md-4 column last"><img src="images/logo-resp-menu.png" /></div>
+	    </div>
+	  </div>
+  </div>
+</section>
 
 <section class="breadcrumb">
   <div class="container">
@@ -168,6 +210,8 @@
     <h3>Our Partners</h3>
     <div class="flexslider-partners">
 	   	<ul class="slides">
+		  	<li class="slide"><a href="#"><img src="images/partners/cocacola.png" /></a></li>
+		  	<li class="slide"><a href="#"><img src="images/partners/pepsi_logo.png" /></a></li>
 		  	<li class="slide"><img src="images/partners/buildup.jpg" /></li>
 		  	<li class="slide"><img src="images/partners/cen.jpg" /></li>
 		  	<li class="slide"><img src="images/partners/cenelec.jpg" /></li>
