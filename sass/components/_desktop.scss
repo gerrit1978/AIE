@@ -116,6 +116,12 @@
 		        margin: 0;
 		        padding: 0;
 		        margin-bottom: 10px;
+		        ul {
+		          li.subitem {
+					font-style: italic;
+					font-size: 0.9em;
+		          }
+		        }
 		      }
 		    }
 		    .column {
@@ -154,7 +160,9 @@
 	  }
 	  ul.slides {
 	    li.slide {
-	    
+	   	  img {
+	   	  	width: 80% !important;
+	   	  }
 	    }
 	  }
 	}
@@ -175,11 +183,16 @@
     .contact {
       a {
         background: url(../images/sprite.png) no-repeat left -354px;
-        display: block;
+        display: inline-block;
         text-indent: -999em;
         border: none;
         width: 30px;
         height: 20px;
+        margin-right: 20px;
+        &.issuu {
+          background-position: -35px -354px;
+          width: 83px;
+        }
       }
     }
   }

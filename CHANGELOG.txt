@@ -1,0 +1,19 @@
+Changelog
+
+20150908
+
+Alles in about.html
+
+- Margin bottom voor breadcrumb
+--- styles.scss r.32
+
+- Issuu icoontje
+--- about.html r.33 e.v.
+--- _desktop.scss r.180 e.v.
+--- sprite aangepast
+
+- Onderscheid niveaus submenu
+--- _desktop.scss r.119e.v.
+
+- Partner afbeeldingen groter
+--- _desktop.scss r.164
